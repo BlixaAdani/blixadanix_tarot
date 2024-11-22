@@ -1,0 +1,13 @@
+{
+  "name": "blixadanix",
+  "version": "1.0.1",
+  "description": "Your reliable source for all things spiritual. Join us on a transformative journey into the heart of Kabbalah, exploring the divine and metaphysical realms. Discover the profound teachings of Binah, the radiant heart of the Tree of Life.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss ./scss/_style.scss ./css/style.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "author": "Naim Francisco Adani Leiva",
+  "license": "ISC"
+}

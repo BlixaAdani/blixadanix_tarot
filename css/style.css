@@ -1,0 +1,102 @@
+#bg-dark {
+  background-color: #1f001f;
+  width: 100%;
+  height: 80px; }
+  #bg-dark .navbar {
+    display: flex;
+    justify-content: center; }
+    #bg-dark .navbar .navbar-brand {
+      height: 5rem;
+      width: 5rem;
+      margin-left: center; }
+    #bg-dark .navbar .navbar-top {
+      list-style-type: none;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly; }
+      #bg-dark .navbar .navbar-top .navbar-two {
+        background-color: #2b094b;
+        color: ghostwhite;
+        border-radius: 30px 30px 30px 30px;
+        border-color: black;
+        height: 4rem;
+        width: 5rem;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; }
+        #bg-dark .navbar .navbar-top .navbar-two .nav-two {
+          text-decoration: none;
+          color: ghostwhite;
+          font-style: italic; }
+      #bg-dark .navbar .navbar-top .navbar-three {
+        background-color: #2b094b;
+        color: ghostwhite;
+        border-radius: 30px 30px 30px 30px;
+        border-color: rgba(0, 0, 0, 0.781);
+        height: 4rem;
+        width: 5rem;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; }
+        #bg-dark .navbar .navbar-top .navbar-three .nav-three {
+          text-decoration: none;
+          color: ghostwhite;
+          font-style: italic; }
+
+main .bg-image {
+  background-image: url("https://i.ibb.co/DVB5tNW/Fondo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100rem; }
+  main .bg-image .fondo {
+    width: 100%;
+    background-image: url("https://s11.gifyu.com/images/SGTb7.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 110vh; }
+  main .bg-image .marquee {
+    font-size: clamp(4ve 4rem 8vw);
+    overflow: hidden;
+    animation: "slideleft 30s non-linear repeat"; }
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0); }
+  100% {
+    transform: translateX(-100%); } }
+    main .bg-image .marquee .marquee--long {
+      font-size: 1.25rem; }
+      main .bg-image .marquee .marquee--long span {
+        display: inline-block;
+        width: var(--tw);
+        text-shadow: var(--tw) 0 currentColor, calc(var(--tw) * 2) 0 currentColor, calc(var(--tw) * 3) 0 currentColor, calc(var(--tw) * 4) 0 currentColor;
+        will-change: repeat;
+        animation: marquee var(--ad) linear infinite; }
+        main .bg-image .marquee .marquee--long span .reel a {
+          width: 100%; }
+          main .bg-image .marquee .marquee--long span .reel a img {
+            width: 90px;
+            height: 90px; }
+            main .bg-image .marquee .marquee--long span .reel a img .reel {
+              display: flex;
+              justify-content: space-evenly; }
+              main .bg-image .marquee .marquee--long span .reel a img .reel .magician {
+                width: 13rem;
+                height: 15rem; }
+              main .bg-image .marquee .marquee--long span .reel a img .reel .moon {
+                width: 9rem;
+                height: 9rem;
+                margin-top: 3rem; }
+            main .bg-image .marquee .marquee--long span .reel a img .reel2 {
+              display: flex;
+              justify-content: space-evenly;
+              margin-top: 19rem;
+              margin-left: 3rem; }
+              main .bg-image .marquee .marquee--long span .reel a img .reel2 .pendulum {
+                width: 9rem;
+                height: 9rem;
+                margin-right: 1rem; }
+              main .bg-image .marquee .marquee--long span .reel a img .reel2 .tree {
+                width: 9rem;
+                height: 9rem; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }

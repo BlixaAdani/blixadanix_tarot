@@ -1,0 +1,82 @@
+main {
+    .bg-image {
+        background-image: url('https://i.ibb.co/DVB5tNW/Fondo.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100rem;
+
+        .fondo {
+            width: 100%;
+            background-image: url('https://s11.gifyu.com/images/SGTb7.gif');
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 110vh;
+        }
+        .marquee{
+            font-size: clamp(4ve 4rem 8vw);
+            overflow: hidden;
+            animation: "slideleft 30s non-linear repeat";
+            &{
+                @keyframes marquee {
+                    0% {
+                      transform: translateX(0);
+                    }
+                    100% {
+                      transform: translateX(-100%);
+                    }
+                }
+            }
+            .marquee--long{
+                font-size: 1.25rem;
+                span{
+                    display: inline-block;
+                    width: var(--tw);
+                    text-shadow: var(--tw) 0 currentColor, calc(var(--tw) * 2) 0 currentColor, calc(var(--tw) * 3) 0 currentColor, calc(var(--tw) * 4) 0 currentColor;
+                    will-change: repeat;
+                    animation: marquee var(--ad) linear infinite;
+                    .reel a{
+                        width: 100%;
+                        img{
+                            width: 90px;
+                            height: 90px;
+                        
+        .reel {
+            display: flex;
+            justify-content: space-evenly;
+
+            .magician {
+                width: 13rem;
+                height: 15rem;
+            }
+
+            .moon {
+                width: 9rem;
+                height: 9rem;
+                margin-top: 3rem;
+            }
+        }
+
+        .reel2 {
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 19rem;
+            margin-left: 3rem;
+
+            .pendulum {
+                width: 9rem;
+                height: 9rem;
+                margin-right: 1rem;
+            }
+
+            .tree {
+                width: 9rem;
+                height: 9rem;
+            }
+        }
+    }
+}
+}
+}    
+}
+}
+}
