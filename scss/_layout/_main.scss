@@ -79,15 +79,20 @@ main {
         }
 
         .login-button {
-            background-color: #fff34e;
-            color: white;
-            padding: 10px 15px;
-            border: none;
-            border-radius: 5px;
+            background-color: #e2d40c;
+            margin-top: 10px;
+            border-radius: 30px;
+            width: 66px;
+            height: 55px;
             cursor: pointer;
 
             &:hover {
                 background-color: #e2d40c;
+            }
+
+            .botonlogin {
+                text-decoration: none;
+                color: black;
             }
         }
     }
@@ -95,13 +100,14 @@ main {
     .botonancla {
         margin-top: 10px;
         border-radius: 30px;
-        width: 45px;
+        width: 66px;
         height: 55px;
         background-color: #e2d40c;
 
 
         .botonliston {
-            list-style-type: none;
+            text-decoration: none;
+            color: black;
         }
     }
 }
@@ -120,21 +126,77 @@ main {
     .info {
         .infotitulo {
             color: bisque;
-            width: 100%;
+            font-size:xxx-large;
+            font-style: italic;
+            font-family: 'Lucida Sans', Times, serif;
         }
-
+        .infoinfo {
+            color: blanchedalmond;
+            font-size: medium;
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: 100;
+        }
+    }
         .formulario {
             display: flex;
             flex-direction: column;
-
-            #contactform {
+            align-items: center;
+            gap: 20px;
+            border-radius: 90px;
+            margin-top: 20px;
+        
+            #contactForm {
                 display: flex;
                 flex-direction: column;
+                align-items: center;
+                gap: 16px;
+        
+                label {
+                    margin-bottom: 8px;
+                }
+        
+                input,
+                textarea {
+                    width: 100vh;
+                    padding: 8px;
+                    margin-bottom: 16px;
+                }
+        
+                button {
+                    height: 45px;
+                    background-color: #0a3369;
+                    color: #fff;
+                    padding: 10px 20px;
+                    border: none;
+                    border-radius: 65px;
+                    cursor: pointer;
+                }
+            }
+        
+            a {
+                text-decoration: none;
+                color: inherit;
+            }
+        .infovolver {
+                    height: 45px;
+                    background-color: #0a3369;
+                    color: #fff;
+                    padding: 10px 20px;
+                    border: none;
+                    border-radius: 65px;
+                    cursor: pointer;
+        }
+        }
+    }
+
+        /* .formulario {
+            #contactForm {
                 .body_us {
                     font-family: Arial, sans-serif;
                     margin: 0;
                     padding: 0;
-                    background-color: #0f0cb1;
+                    background-color: #1e1c88;
 
                     .main_us {
                         display: block;
@@ -154,7 +216,6 @@ main {
                             width: 100%;
                             padding: 8px;
                             margin-bottom: 16px;
-                            box-sizing: border-box;
 
                             button {
                                 background-color: #333333;
@@ -169,5 +230,4 @@ main {
                 }
             }
         }
-    }
-}
+    } */

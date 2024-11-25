@@ -5,8 +5,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
         /*Combinación de usuarios y contraseñas*/
         var validCredentials = [
-            { username: "Coder", password: "House" },
-            { username: "Hola", password: "Tutor" }
+            { username: "Prueba", password: "1" },
+            { username: "Prueba", password: "2" }
         ];
 
         var isValid = false;
@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
         if (isValid) {
             alert("Login successful!");
-            window.location.href = "aviso.html"
+            window.location.href = "loginyes.html"
         } else {
             alert("Invalid username or password. Please try again.");
         }

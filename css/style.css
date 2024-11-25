@@ -4,7 +4,7 @@
   height: 80px; }
   #bg-dark .navbar {
     display: flex;
-    justify-content: center; }
+    justify-content: space-between; }
     #bg-dark .navbar .navbar-brand {
       height: 5rem;
       width: 5rem;
@@ -12,8 +12,7 @@
     #bg-dark .navbar .navbar-top {
       list-style-type: none;
       display: flex;
-      align-items: center;
-      justify-content: space-evenly; }
+      align-items: center; }
       #bg-dark .navbar .navbar-top .navbar-two {
         background-color: #2b094b;
         color: ghostwhite;
@@ -93,22 +92,26 @@ main .bg-image .marquee {
       margin: 10px 0;
       box-sizing: border-box; }
     .login-body #login-container .login-button {
-      background-color: #fff34e;
-      color: white;
-      padding: 10px 15px;
-      border: none;
-      border-radius: 5px;
+      background-color: #e2d40c;
+      margin-top: 10px;
+      border-radius: 30px;
+      width: 66px;
+      height: 55px;
       cursor: pointer; }
       .login-body #login-container .login-button:hover {
         background-color: #e2d40c; }
+      .login-body #login-container .login-button .botonlogin {
+        text-decoration: none;
+        color: black; }
   .login-body .botonancla {
     margin-top: 10px;
     border-radius: 30px;
-    width: 45px;
+    width: 66px;
     height: 55px;
     background-color: #e2d40c; }
     .login-body .botonancla .botonliston {
-      list-style-type: none; }
+      text-decoration: none;
+      color: black; }
 
 /* INFO.HTML */
 .bg-image {
@@ -121,43 +124,95 @@ main .bg-image .marquee {
   align-items: center; }
   .bg-image .info .infotitulo {
     color: bisque;
-    width: 100%; }
-  .bg-image .info .formulario {
+    font-size: xxx-large;
+    font-style: italic;
+    font-family: 'Lucida Sans', Times, serif; }
+  .bg-image .info .infoinfo {
+    color: blanchedalmond;
+    font-size: medium;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 100; }
+  .bg-image .formulario {
     display: flex;
-    flex-direction: column; }
-    .bg-image .info .formulario #contactform {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    border-radius: 90px;
+    margin-top: 20px; }
+    .bg-image .formulario #contactForm {
       display: flex;
-      flex-direction: column; }
-      .bg-image .info .formulario #contactform .body_us {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color: #0f0cb1; }
-        .bg-image .info .formulario #contactform .body_us .main_us {
-          display: block;
-          max-width: 600px;
-          margin: 20px auto;
-          padding: 20px;
-          background-color: #fff;
-          box-shadow: 0 0 10px rgba(138, 12, 223, 0.1);
-          border-radius: 5px; }
-          .bg-image .info .formulario #contactform .body_us .main_us label {
-            margin-bottom: 8px; }
-          .bg-image .info .formulario #contactform .body_us .main_us input,
-          .bg-image .info .formulario #contactform .body_us .main_us textarea {
-            width: 100%;
-            padding: 8px;
-            margin-bottom: 16px;
-            box-sizing: border-box; }
-            .bg-image .info .formulario #contactform .body_us .main_us input button,
-            .bg-image .info .formulario #contactform .body_us .main_us textarea button {
-              background-color: #333333;
-              color: #fff;
-              padding: 10px 20px;
-              border: none;
-              border-radius: 3px;
-              cursor: pointer; }
+      flex-direction: column;
+      align-items: center;
+      gap: 16px; }
+      .bg-image .formulario #contactForm label {
+        margin-bottom: 8px; }
+      .bg-image .formulario #contactForm input,
+      .bg-image .formulario #contactForm textarea {
+        width: 100vh;
+        padding: 8px;
+        margin-bottom: 16px; }
+      .bg-image .formulario #contactForm button {
+        height: 45px;
+        background-color: #0a3369;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 65px;
+        cursor: pointer; }
+    .bg-image .formulario a {
+      text-decoration: none;
+      color: inherit; }
+    .bg-image .formulario .infovolver {
+      height: 45px;
+      background-color: #0a3369;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 65px;
+      cursor: pointer; }
 
+/* .formulario {
+            #contactForm {
+                .body_us {
+                    font-family: Arial, sans-serif;
+                    margin: 0;
+                    padding: 0;
+                    background-color: #1e1c88;
+
+                    .main_us {
+                        display: block;
+                        max-width: 600px;
+                        margin: 20px auto;
+                        padding: 20px;
+                        background-color: #fff;
+                        box-shadow: 0 0 10px rgba(138, 12, 223, 0.1);
+                        border-radius: 5px;
+
+                        label {
+                            margin-bottom: 8px;
+                        }
+
+                        input,
+                        textarea {
+                            width: 100%;
+                            padding: 8px;
+                            margin-bottom: 16px;
+
+                            button {
+                                background-color: #333333;
+                                color: #fff;
+                                padding: 10px 20px;
+                                border: none;
+                                border-radius: 3px;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    } */
 .footer {
   width: 100%;
   background-color: #1f001f;
