@@ -232,8 +232,7 @@ main .bg-image .marquee {
       height: 30px; }
       main #bg-dark .navbar {
         display: flex;
-        align-items: left;
-        margin-right: 50vh; }
+        align-items: left; }
         main #bg-dark .navbar .navbar-brand {
           height: 2rem;
           width: 2rem; }
@@ -271,7 +270,7 @@ main .bg-image .marquee {
     main .bg-image {
       width: 320px; }
       main .bg-image .fondo {
-        width: 100%;
+        width: 20rem;
         height: 30vh;
         background-image: url("https://s11.gifyu.com/images/SGTb7.gif");
         background-repeat: no-repeat;
