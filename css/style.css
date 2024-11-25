@@ -39,62 +39,133 @@
           color: ghostwhite;
           font-style: italic; }
 
-main .bg-image {
-  background-image: url("https://i.ibb.co/DVB5tNW/Fondo.jpg");
+main .bg-image .fondo {
+  width: 100%;
+  background-image: url("https://s11.gifyu.com/images/SGTb7.gif");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100rem; }
-  main .bg-image .fondo {
-    width: 100%;
-    background-image: url("https://s11.gifyu.com/images/SGTb7.gif");
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 110vh; }
-  main .bg-image .marquee {
-    font-size: clamp(4ve 4rem 8vw);
-    overflow: hidden;
-    animation: "slideleft 30s non-linear repeat"; }
+  height: 110vh; }
+
+main .bg-image .marquee {
+  font-size: clamp(4ve 4rem 8vw);
+  overflow: hidden;
+  animation: "slideleft 30s non-linear repeat"; }
 
 @keyframes marquee {
   0% {
     transform: translateX(0); }
   100% {
     transform: translateX(-100%); } }
-    main .bg-image .marquee .marquee--long {
-      font-size: 1.25rem; }
-      main .bg-image .marquee .marquee--long span {
-        display: inline-block;
-        width: var(--tw);
-        text-shadow: var(--tw) 0 currentColor, calc(var(--tw) * 2) 0 currentColor, calc(var(--tw) * 3) 0 currentColor, calc(var(--tw) * 4) 0 currentColor;
-        will-change: repeat;
-        animation: marquee var(--ad) linear infinite; }
-        main .bg-image .marquee .marquee--long span .reel a {
-          width: 100%; }
-          main .bg-image .marquee .marquee--long span .reel a img {
-            width: 90px;
-            height: 90px; }
-            main .bg-image .marquee .marquee--long span .reel a img .reel {
-              display: flex;
-              justify-content: space-evenly; }
-              main .bg-image .marquee .marquee--long span .reel a img .reel .magician {
-                width: 13rem;
-                height: 15rem; }
-              main .bg-image .marquee .marquee--long span .reel a img .reel .moon {
-                width: 9rem;
-                height: 9rem;
-                margin-top: 3rem; }
-            main .bg-image .marquee .marquee--long span .reel a img .reel2 {
-              display: flex;
-              justify-content: space-evenly;
-              margin-top: 19rem;
-              margin-left: 3rem; }
-              main .bg-image .marquee .marquee--long span .reel a img .reel2 .pendulum {
-                width: 9rem;
-                height: 9rem;
-                margin-right: 1rem; }
-              main .bg-image .marquee .marquee--long span .reel a img .reel2 .tree {
-                width: 9rem;
-                height: 9rem; }
+  main .bg-image .marquee .marquee--long span {
+    margin-top: 90vh;
+    display: inline-block;
+    width: var(--tw);
+    text-shadow: var(--tw) 0 currentColor, calc(var(--tw) * 2) 0 currentColor, calc(var(--tw) * 3) 0 currentColor, calc(var(--tw) * 4) 0 currentColor;
+    will-change: repeat;
+    animation: marquee var(--ad) linear infinite; }
+    main .bg-image .marquee .marquee--long span .reel a {
+      width: 100%; }
+      main .bg-image .marquee .marquee--long span .reel a img {
+        width: 90px;
+        height: 90px; }
+
+/* ENTER.HTML */
+.login-body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-image: url("../assets/apollo.gif");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; }
+  .login-body #login-container {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center; }
+    .login-body #login-container .login-input {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      box-sizing: border-box; }
+    .login-body #login-container .login-button {
+      background-color: #fff34e;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer; }
+      .login-body #login-container .login-button:hover {
+        background-color: #e2d40c; }
+  .login-body .botonancla {
+    margin-top: 10px;
+    border-radius: 30px;
+    width: 45px;
+    height: 55px;
+    background-color: #e2d40c; }
+    .login-body .botonancla .botonliston {
+      list-style-type: none; }
+
+/* INFO.HTML */
+.bg-image {
+  background-image: url("https://i.ibb.co/DVB5tNW/Fondo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .bg-image .info .infotitulo {
+    color: bisque;
+    width: 100%; }
+  .bg-image .info .formulario {
+    display: flex;
+    flex-direction: column; }
+    .bg-image .info .formulario #contactform {
+      display: flex;
+      flex-direction: column; }
+      .bg-image .info .formulario #contactform .body_us {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #0f0cb1; }
+        .bg-image .info .formulario #contactform .body_us .main_us {
+          display: block;
+          max-width: 600px;
+          margin: 20px auto;
+          padding: 20px;
+          background-color: #fff;
+          box-shadow: 0 0 10px rgba(138, 12, 223, 0.1);
+          border-radius: 5px; }
+          .bg-image .info .formulario #contactform .body_us .main_us label {
+            margin-bottom: 8px; }
+          .bg-image .info .formulario #contactform .body_us .main_us input,
+          .bg-image .info .formulario #contactform .body_us .main_us textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box; }
+            .bg-image .info .formulario #contactform .body_us .main_us input button,
+            .bg-image .info .formulario #contactform .body_us .main_us textarea button {
+              background-color: #333333;
+              color: #fff;
+              padding: 10px 20px;
+              border: none;
+              border-radius: 3px;
+              cursor: pointer; }
+
+.footer {
+  width: 100%;
+  background-color: #1f001f;
+  margin-top: 4vh; }
+  .footer .footer-nav {
+    display: flex; }
+    .footer .footer-nav .footerp {
+      color: bisque; }
 
 * {
   margin: 0;

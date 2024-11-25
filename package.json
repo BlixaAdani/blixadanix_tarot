@@ -9,5 +9,13 @@
     "watch-css": "nodemon -e scss -x \"npm run build-css\""
   },
   "author": "Naim Francisco Adani Leiva",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BlixaAdani/blixadanix_tarot.git"
+  },
+  "bugs": {
+    "url": "https://github.com/BlixaAdani/blixadanix_tarot/issues"
+  },
+  "homepage": "https://github.com/BlixaAdani/blixadanix_tarot#readme"
 }
