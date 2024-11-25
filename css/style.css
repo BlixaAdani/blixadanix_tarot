@@ -270,8 +270,8 @@ main .bg-image .marquee {
     main .bg-image {
       width: 320px; }
       main .bg-image .fondo {
-        width: 20rem;
-        height: 30vh;
+        width: 640vh;
+        height: 50vh;
         background-image: url("https://s11.gifyu.com/images/SGTb7.gif");
         background-repeat: no-repeat;
         background-size: cover; }
