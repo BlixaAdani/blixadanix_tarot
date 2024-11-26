@@ -269,6 +269,83 @@ main .bg-image .marquee {
     background-image: url("https://i.gifer.com/7Rrd.gif");
     background-repeat: no-repeat;
     background-size: cover;
+    width: 50%;
+    height: 40vh;
+    align-self: center; }
+  main .bg-image .marquee {
+    font-size: clamp(4ve 4rem 8vw);
+    overflow: hidden;
+    animation: "slideleft 30s non-linear repeat"; }
+  @keyframes marquee {
+    0% {
+      transform: translateX(0); }
+    100% {
+      transform: translateX(-100%); } }
+    main .bg-image .marquee .marquee--long span {
+      margin-top: 25vh;
+      display: inline-block;
+      width: var(--tw);
+      text-shadow: var(--tw) 0 currentColor, calc(var(--tw) * 2) 0 currentColor, calc(var(--tw) * 3) 0 currentColor, calc(var(--tw) * 4) 0 currentColor;
+      will-change: repeat;
+      animation: marquee var(--ad) linear infinite; }
+      main .bg-image .marquee .marquee--long span .reel a {
+        width: 100%; }
+        main .bg-image .marquee .marquee--long span .reel a img {
+          width: 20px;
+          height: 20px; }
+  .footer {
+    margin-top: 0; }
+    .footer .footer-nav {
+      display: flex; }
+      .footer .footer-nav .footerp {
+        color: bisque; } }
+
+@media (max-width: 375px) {
+  main #bg-dark {
+    background-color: #1f001f;
+    width: 20rem;
+    height: 30px; }
+    main #bg-dark .navbar {
+      display: flex;
+      align-items: left; }
+      main #bg-dark .navbar .navbar-brand {
+        height: 2rem;
+        width: 1rem; }
+      main #bg-dark .navbar .navbar-top {
+        list-style-type: none;
+        display: flex;
+        height: 20px;
+        width: 20px; }
+        main #bg-dark .navbar .navbar-top .navbar-two {
+          background-color: #2b094b;
+          color: ghostwhite;
+          border-radius: 30px 30px 30px 30px;
+          border-color: black;
+          font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+          font-size: xx-small;
+          height: 20px; }
+          main #bg-dark .navbar .navbar-top .navbar-two .nav-two {
+            text-decoration: none;
+            color: ghostwhite;
+            font-style: italic; }
+        main #bg-dark .navbar .navbar-top .navbar-three {
+          background-color: #2b094b;
+          color: ghostwhite;
+          border-radius: 30px 30px 30px 30px;
+          border-color: rgba(0, 0, 0, 0.781);
+          font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+          font-size: xx-small;
+          height: 20px; }
+          main #bg-dark .navbar .navbar-top .navbar-three .nav-three {
+            text-decoration: none;
+            color: ghostwhite;
+            font-style: italic;
+            width: 0.5vh;
+            height: 0.5vh; }
+  main .bg-image .fondo {
+    background-image: url("https://i.gifer.com/7Rrd.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 100%;
     height: 50vh;
     align-self: center; }
@@ -300,7 +377,7 @@ main .bg-image .marquee {
       .footer .footer-nav .footerp {
         color: bisque; } }
 
-@media (max-width: 375px) {
+@media (max-width: 425px) {
   main #bg-dark {
     background-color: #1f001f;
     width: 20rem;
