@@ -59,13 +59,13 @@
         }
 
         .bg-image {
+            height: 100vh;
             .fondo {
                 background-image: url('https://i.gifer.com/7Rrd.gif');
                 background-repeat: no-repeat;
                 background-size: cover;
-                width: 50%;
-                height: 40vh;
-                align-self: center;
+                width: 50vh;
+                height: 1000vh;
             }
 
             .marquee {
@@ -105,18 +105,56 @@
                     }
                 }
             }
+
+            .Articulos {
+                padding: 1rem;
+                font-size: 0.9rem;
+        
+                p {
+                    display: none;
+                    color: beige;
+                }
+        
+                .snippet {
+                    display: block;
+                    color: beige;
+                    font-weight: 500;
+                }
+        
+                .read-more {
+                    display: inline-block;
+                    margin-top: 0.5rem;
+                    font-size: 0.8rem;
+                    font-style: italic;
+                    color: beige;
+                    text-decoration: none;
+                    cursor: pointer;
+                }
+            }
         }
     }
 
-    .footer{
+    .footer {
         margin-top: 0;
-    
+
         .footer-nav {
             display: flex;
-        
-        .footerp {
-            color: bisque;
+
+            .footerp {
+                color: bisque;
+            }
         }
+    }
+}
+
+@media (min-width: 321px) {
+    .Articulos {
+        p {
+            display: block;
+        }
+        .snippet,
+        .read-more {
+            display: none;
         }
     }
 }
@@ -231,15 +269,15 @@
         }
     }
 
-    .footer{
+    .footer {
         margin-top: 0;
-    
+
         .footer-nav {
             display: flex;
-        
-        .footerp {
-            color: bisque;
-        }
+
+            .footerp {
+                color: bisque;
+            }
         }
     }
 }
@@ -354,15 +392,88 @@
         }
     }
 
-    .footer{
-        margin-top: 0;
-    
-        .footer-nav {
+    /* INFO.HTML */
+    main {
+        height: 100vh;
+        .bg-image {
+            background-image: url('https://i.ibb.co/DVB5tNW/Fondo.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
             display: flex;
-        
-        .footerp {
-            color: bisque;
-        }
+            flex-direction: column;
+            align-items: center;
+
+            .info {
+                .infotitulo {
+                    color: bisque;
+                    font-size: x-small;
+                    font-style: italic;
+                    font-family: 'Lucida Sans', Times, serif;
+                    margin-left: 10vh;
+                }
+
+                .infoinfo {
+                    color: blanchedalmond;
+                    font-size: xx-small;
+                    text-align: center;
+                    font-family: 'Times New Roman', Times, serif;
+                    font-weight: 100;
+                }
+            }
+
+            .formulario {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 20px;
+                border-radius: 90px;
+                margin-top: 20px;
+
+                #contactForm {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 16px;
+
+                    label {
+                        margin-bottom: 8px;
+                    }
+
+                    input,
+                    textarea {
+                        width: 5%;
+                        padding: 8px;
+                        margin-bottom: 16px;
+                        background-color: white;
+                    }
+
+                    button {
+                        height: 45px;
+                        background-color: #0a3369;
+                        color: #fff;
+                        padding: 10px 20px;
+                        border: none;
+                        border-radius: 65px;
+                        cursor: pointer;
+                    }
+                }
+
+                a {
+                    text-decoration: none;
+                    color: inherit;
+                }
+
+                .infovolver {
+                    height: 45px;
+                    background-color: #0a3369;
+                    color: #fff;
+                    padding: 10px 20px;
+                    border: none;
+                    border-radius: 65px;
+                    cursor: pointer;
+                }
+            }
         }
     }
 }

@@ -265,40 +265,66 @@ main .bg-image .marquee {
             font-style: italic;
             width: 0.5vh;
             height: 0.5vh; }
-  main .bg-image .fondo {
-    background-image: url("https://i.gifer.com/7Rrd.gif");
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 50%;
-    height: 40vh;
-    align-self: center; }
-  main .bg-image .marquee {
-    font-size: clamp(4ve 4rem 8vw);
-    overflow: hidden;
-    animation: "slideleft 30s non-linear repeat"; }
+  main .bg-image {
+    height: 100vh; }
+    main .bg-image .fondo {
+      background-image: url("https://i.gifer.com/7Rrd.gif");
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 50vh;
+      height: 1000vh; }
+    main .bg-image .marquee {
+      font-size: clamp(4ve 4rem 8vw);
+      overflow: hidden;
+      animation: "slideleft 30s non-linear repeat"; }
   @keyframes marquee {
     0% {
       transform: translateX(0); }
     100% {
       transform: translateX(-100%); } }
-    main .bg-image .marquee .marquee--long span {
-      margin-top: 25vh;
-      display: inline-block;
-      width: var(--tw);
-      text-shadow: var(--tw) 0 currentColor, calc(var(--tw) * 2) 0 currentColor, calc(var(--tw) * 3) 0 currentColor, calc(var(--tw) * 4) 0 currentColor;
-      will-change: repeat;
-      animation: marquee var(--ad) linear infinite; }
-      main .bg-image .marquee .marquee--long span .reel a {
-        width: 100%; }
-        main .bg-image .marquee .marquee--long span .reel a img {
-          width: 20px;
-          height: 20px; }
+      main .bg-image .marquee .marquee--long span {
+        margin-top: 25vh;
+        display: inline-block;
+        width: var(--tw);
+        text-shadow: var(--tw) 0 currentColor, calc(var(--tw) * 2) 0 currentColor, calc(var(--tw) * 3) 0 currentColor, calc(var(--tw) * 4) 0 currentColor;
+        will-change: repeat;
+        animation: marquee var(--ad) linear infinite; }
+        main .bg-image .marquee .marquee--long span .reel a {
+          width: 100%; }
+          main .bg-image .marquee .marquee--long span .reel a img {
+            width: 20px;
+            height: 20px; }
+    main .bg-image .Articulos {
+      padding: 1rem;
+      font-size: 0.9rem; }
+      main .bg-image .Articulos p {
+        display: none;
+        color: beige; }
+      main .bg-image .Articulos .snippet {
+        display: block;
+        color: beige;
+        font-weight: 500; }
+      main .bg-image .Articulos .read-more {
+        display: inline-block;
+        margin-top: 0.5rem;
+        font-size: 0.8rem;
+        font-style: italic;
+        color: beige;
+        text-decoration: none;
+        cursor: pointer; }
   .footer {
     margin-top: 0; }
     .footer .footer-nav {
       display: flex; }
       .footer .footer-nav .footerp {
         color: bisque; } }
+
+@media (min-width: 321px) {
+  .Articulos p {
+    display: block; }
+  .Articulos .snippet,
+  .Articulos .read-more {
+    display: none; } }
 
 @media (max-width: 375px) {
   main #bg-dark {
@@ -447,12 +473,68 @@ main .bg-image .marquee {
         main .bg-image .marquee .marquee--long span .reel a img {
           width: 20px;
           height: 20px; }
-  .footer {
-    margin-top: 0; }
-    .footer .footer-nav {
-      display: flex; }
-      .footer .footer-nav .footerp {
-        color: bisque; } }
+  /* INFO.HTML */
+  main {
+    height: 100vh; }
+    main .bg-image {
+      background-image: url("https://i.ibb.co/DVB5tNW/Fondo.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      main .bg-image .info .infotitulo {
+        color: bisque;
+        font-size: x-small;
+        font-style: italic;
+        font-family: 'Lucida Sans', Times, serif;
+        margin-left: 10vh; }
+      main .bg-image .info .infoinfo {
+        color: blanchedalmond;
+        font-size: xx-small;
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 100; }
+      main .bg-image .formulario {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        border-radius: 90px;
+        margin-top: 20px; }
+        main .bg-image .formulario #contactForm {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 16px; }
+          main .bg-image .formulario #contactForm label {
+            margin-bottom: 8px; }
+          main .bg-image .formulario #contactForm input,
+          main .bg-image .formulario #contactForm textarea {
+            width: 5%;
+            padding: 8px;
+            margin-bottom: 16px;
+            background-color: white; }
+          main .bg-image .formulario #contactForm button {
+            height: 45px;
+            background-color: #0a3369;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 65px;
+            cursor: pointer; }
+        main .bg-image .formulario a {
+          text-decoration: none;
+          color: inherit; }
+        main .bg-image .formulario .infovolver {
+          height: 45px;
+          background-color: #0a3369;
+          color: #fff;
+          padding: 10px 20px;
+          border: none;
+          border-radius: 65px;
+          cursor: pointer; } }
 
 * {
   margin: 0;
