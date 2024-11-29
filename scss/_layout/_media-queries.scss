@@ -59,13 +59,12 @@
         }
 
         .bg-image {
-            height: 100vh;
             .fondo {
                 background-image: url('https://i.gifer.com/7Rrd.gif');
                 background-repeat: no-repeat;
                 background-size: cover;
                 width: 50vh;
-                height: 1000vh;
+                height: 60vh !important;
             }
 
             .marquee {
@@ -87,7 +86,7 @@
 
                 .marquee--long {
                     span {
-                        margin-top: 25vh;
+                        margin-top: 30vh;
                         display: inline-block;
                         width: var(--tw);
                         text-shadow: var(--tw) 0 currentColor, calc(var(--tw) * 2) 0 currentColor, calc(var(--tw) * 3) 0 currentColor, calc(var(--tw) * 4) 0 currentColor;
@@ -96,10 +95,11 @@
 
                         .reel a {
                             width: 100%;
+                            margin-top: 5vh;
 
                             img {
-                                width: 20px;
-                                height: 20px;
+                                width: 50px !important;
+                                height: 50px !important;
                             }
                         }
                     }
@@ -145,7 +145,90 @@
             }
         }
     }
-}
+
+    /* INFO.HTML */
+    .bg-image {
+            background-image: url('https://i.ibb.co/DVB5tNW/Fondo.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+            height: 120vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .info {
+                .infotitulo {
+                    color: bisque;
+                    font-size: medium;
+                    font-style: italic;
+                    font-family: 'Lucida Sans', Times, serif;
+                    margin-left: 3vh;
+                }
+
+                .infoinfo {
+                    color: blanchedalmond;
+                    font-size: x-small;
+                    text-align: center;
+                    font-family: 'Times New Roman', Times, serif;
+                    font-weight: 100;
+                }
+            }
+
+            .formulario {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 20px;
+                border-radius: 90px;
+                margin-top: 20px;
+
+                #contactForm {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 16px;
+
+                    label {
+                        margin-bottom: 8px;
+                    }
+
+                    input,
+                    textarea {
+                        width: 50vh;
+                        padding: 8px;
+                        margin-bottom: 16px;
+                        background-color: white;
+                    }
+
+                    button {
+                        height: 45px;
+                        background-color: #0a3369;
+                        color: #fff;
+                        padding: 10px 20px;
+                        border: none;
+                        border-radius: 65px;
+                        cursor: pointer;
+                    }
+                }
+
+                a {
+                    text-decoration: none;
+                    color: inherit;
+                }
+
+                .infovolver {
+                    height: 45px;
+                    background-color: #0a3369;
+                    color: #fff;
+                    padding: 10px 20px;
+                    border: none;
+                    border-radius: 65px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
 
 @media (min-width: 321px) {
     .Articulos {
