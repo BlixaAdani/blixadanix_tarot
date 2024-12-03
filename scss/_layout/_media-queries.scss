@@ -86,7 +86,7 @@
 
                 .marquee--long {
                     span {
-                        margin-top: 50vh !important;
+                        margin-top: 70vh !important;
                         display: inline-block;
                         width: var(--tw);
                         text-shadow: var(--tw) 0 currentColor, calc(var(--tw) * 2) 0 currentColor, calc(var(--tw) * 3) 0 currentColor, calc(var(--tw) * 4) 0 currentColor;
@@ -297,7 +297,7 @@
                 background-repeat: no-repeat;
                 background-size: cover;
                 width: 100%;
-                height: 70vh;
+                height: 70vh !important;
                 align-self: center;
             }
 
@@ -529,7 +529,7 @@
                 background-repeat: no-repeat;
                 background-size: cover;
                 width: 100%;
-                height: 70vh;
+                height: 80vh !important;
                 align-self: center;
             }
 
