@@ -304,8 +304,8 @@ main .bg-image .marquee {
     background-image: url("https://i.gifer.com/7Rrd.gif");
     background-repeat: no-repeat;
     background-size: cover;
-    width: 50vh;
-    height: 60vh !important; }
+    width: 100% !important;
+    height: 50vh !important; }
   #main .bg-image .marquee {
     font-size: clamp(4ve 4rem 8vw);
     overflow: hidden;
