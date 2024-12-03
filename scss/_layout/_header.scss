@@ -52,4 +52,53 @@
             }
         }
     }
+
+    /* LOGINYES.HTML */
+    .navyes {
+        display: flex;
+        justify-content: space-between;
+
+        .navyes-brand {
+            width: 60px;
+            height: 80px;
+        }
+
+        .navyes-top {
+            display: flex;
+            list-style-type: none;
+            align-items: center;
+
+            .navbar-two {
+                background-color: rgb(43, 9, 75);
+                color: ghostwhite;
+                border-radius: 30px 30px 30px 30px;
+                border-color: black;
+                height: 4rem;
+                width: 5rem;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+                .nav-two {
+                    text-decoration: none;
+                    color: ghostwhite;
+                    font-style: italic;
+                }
+            }
+
+            .navbar-three {
+                background-color: rgb(43, 9, 75);
+                color: ghostwhite;
+                border-radius: 30px 30px 30px 30px;
+                border-color: rgba(0, 0, 0, 0.781);
+                height: 4rem;
+                width: 5rem;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+                .nav-three {
+                    text-decoration: none;
+                    color: ghostwhite;
+                    font-style: italic;
+                }
+            }
+        }
+    }
 }

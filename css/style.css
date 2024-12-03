@@ -1,7 +1,8 @@
 #bg-dark {
   background-color: #1f001f;
   width: 100%;
-  height: 80px; }
+  height: 80px;
+  /* LOGINYES.HTML */ }
   #bg-dark .navbar {
     display: flex;
     justify-content: space-between; }
@@ -34,6 +35,40 @@
         width: 5rem;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; }
         #bg-dark .navbar .navbar-top .navbar-three .nav-three {
+          text-decoration: none;
+          color: ghostwhite;
+          font-style: italic; }
+  #bg-dark .navyes {
+    display: flex;
+    justify-content: space-between; }
+    #bg-dark .navyes .navyes-brand {
+      width: 60px;
+      height: 80px; }
+    #bg-dark .navyes .navyes-top {
+      display: flex;
+      list-style-type: none;
+      align-items: center; }
+      #bg-dark .navyes .navyes-top .navbar-two {
+        background-color: #2b094b;
+        color: ghostwhite;
+        border-radius: 30px 30px 30px 30px;
+        border-color: black;
+        height: 4rem;
+        width: 5rem;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; }
+        #bg-dark .navyes .navyes-top .navbar-two .nav-two {
+          text-decoration: none;
+          color: ghostwhite;
+          font-style: italic; }
+      #bg-dark .navyes .navyes-top .navbar-three {
+        background-color: #2b094b;
+        color: ghostwhite;
+        border-radius: 30px 30px 30px 30px;
+        border-color: rgba(0, 0, 0, 0.781);
+        height: 4rem;
+        width: 5rem;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; }
+        #bg-dark .navyes .navyes-top .navbar-three .nav-three {
           text-decoration: none;
           color: ghostwhite;
           font-style: italic; }
@@ -224,22 +259,22 @@ main .bg-image .marquee {
       color: bisque; }
 
 @media (max-width: 320px) {
-  main #bg-dark {
+  #main #bg-dark {
     background-color: #1f001f;
     width: 20rem;
     height: 30px; }
-    main #bg-dark .navbar {
+    #main #bg-dark .navbar {
       display: flex;
       align-items: left; }
-      main #bg-dark .navbar .navbar-brand {
+      #main #bg-dark .navbar .navbar-brand {
         height: 2rem;
         width: 1rem; }
-      main #bg-dark .navbar .navbar-top {
+      #main #bg-dark .navbar .navbar-top {
         list-style-type: none;
         display: flex;
         height: 20px;
         width: 20px; }
-        main #bg-dark .navbar .navbar-top .navbar-two {
+        #main #bg-dark .navbar .navbar-top .navbar-two {
           background-color: #2b094b;
           color: ghostwhite;
           border-radius: 30px 30px 30px 30px;
@@ -247,11 +282,11 @@ main .bg-image .marquee {
           font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
           font-size: xx-small;
           height: 20px; }
-          main #bg-dark .navbar .navbar-top .navbar-two .nav-two {
+          #main #bg-dark .navbar .navbar-top .navbar-two .nav-two {
             text-decoration: none;
             color: ghostwhite;
             font-style: italic; }
-        main #bg-dark .navbar .navbar-top .navbar-three {
+        #main #bg-dark .navbar .navbar-top .navbar-three {
           background-color: #2b094b;
           color: ghostwhite;
           border-radius: 30px 30px 30px 30px;
@@ -259,19 +294,19 @@ main .bg-image .marquee {
           font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
           font-size: xx-small;
           height: 20px; }
-          main #bg-dark .navbar .navbar-top .navbar-three .nav-three {
+          #main #bg-dark .navbar .navbar-top .navbar-three .nav-three {
             text-decoration: none;
             color: ghostwhite;
             font-style: italic;
             width: 0.5vh;
             height: 0.5vh; }
-  main .bg-image .fondo {
+  #main .bg-image .fondo {
     background-image: url("https://i.gifer.com/7Rrd.gif");
     background-repeat: no-repeat;
     background-size: cover;
     width: 50vh;
     height: 60vh !important; }
-  main .bg-image .marquee {
+  #main .bg-image .marquee {
     font-size: clamp(4ve 4rem 8vw);
     overflow: hidden;
     animation: "slideleft 30s non-linear repeat"; }
@@ -280,30 +315,29 @@ main .bg-image .marquee {
       transform: translateX(0); }
     100% {
       transform: translateX(-100%); } }
-    main .bg-image .marquee .marquee--long span {
-      margin-top: 30vh;
+    #main .bg-image .marquee .marquee--long span {
+      margin-top: 50vh !important;
       display: inline-block;
       width: var(--tw);
       text-shadow: var(--tw) 0 currentColor, calc(var(--tw) * 2) 0 currentColor, calc(var(--tw) * 3) 0 currentColor, calc(var(--tw) * 4) 0 currentColor;
       will-change: repeat;
       animation: marquee var(--ad) linear infinite; }
-      main .bg-image .marquee .marquee--long span .reel a {
-        width: 100%;
-        margin-top: 5vh; }
-        main .bg-image .marquee .marquee--long span .reel a img {
+      #main .bg-image .marquee .marquee--long span .reel a {
+        width: 100%; }
+        #main .bg-image .marquee .marquee--long span .reel a img {
           width: 50px !important;
           height: 50px !important; }
-  main .bg-image .Articulos {
+  #main .bg-image .Articulos {
     padding: 1rem;
     font-size: 0.9rem; }
-    main .bg-image .Articulos p {
+    #main .bg-image .Articulos p {
       display: none;
       color: beige; }
-    main .bg-image .Articulos .snippet {
+    #main .bg-image .Articulos .snippet {
       display: block;
       color: beige;
       font-weight: 500; }
-    main .bg-image .Articulos .read-more {
+    #main .bg-image .Articulos .read-more {
       display: inline-block;
       margin-top: 0.5rem;
       font-size: 0.8rem;
@@ -379,30 +413,23 @@ main .bg-image .marquee {
         border-radius: 65px;
         cursor: pointer; } }
 
-@media (min-width: 321px) {
-  .Articulos p {
-    display: block; }
-  .Articulos .snippet,
-  .Articulos .read-more {
-    display: none; } }
-
 @media (max-width: 375px) {
-  main #bg-dark {
+  #main #bg-dark {
     background-color: #1f001f;
     width: 20rem;
     height: 30px; }
-    main #bg-dark .navbar {
+    #main #bg-dark .navbar {
       display: flex;
       align-items: left; }
-      main #bg-dark .navbar .navbar-brand {
+      #main #bg-dark .navbar .navbar-brand {
         height: 2rem;
         width: 1rem; }
-      main #bg-dark .navbar .navbar-top {
+      #main #bg-dark .navbar .navbar-top {
         list-style-type: none;
         display: flex;
         height: 20px;
         width: 20px; }
-        main #bg-dark .navbar .navbar-top .navbar-two {
+        #main #bg-dark .navbar .navbar-top .navbar-two {
           background-color: #2b094b;
           color: ghostwhite;
           border-radius: 30px 30px 30px 30px;
@@ -410,11 +437,11 @@ main .bg-image .marquee {
           font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
           font-size: xx-small;
           height: 20px; }
-          main #bg-dark .navbar .navbar-top .navbar-two .nav-two {
+          #main #bg-dark .navbar .navbar-top .navbar-two .nav-two {
             text-decoration: none;
             color: ghostwhite;
             font-style: italic; }
-        main #bg-dark .navbar .navbar-top .navbar-three {
+        #main #bg-dark .navbar .navbar-top .navbar-three {
           background-color: #2b094b;
           color: ghostwhite;
           border-radius: 30px 30px 30px 30px;
@@ -422,20 +449,20 @@ main .bg-image .marquee {
           font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
           font-size: xx-small;
           height: 20px; }
-          main #bg-dark .navbar .navbar-top .navbar-three .nav-three {
+          #main #bg-dark .navbar .navbar-top .navbar-three .nav-three {
             text-decoration: none;
             color: ghostwhite;
             font-style: italic;
             width: 0.5vh;
             height: 0.5vh; }
-  main .bg-image .fondo {
+  #main .bg-image .fondo {
     background-image: url("https://i.gifer.com/7Rrd.gif");
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 50vh;
+    height: 70vh;
     align-self: center; }
-  main .bg-image .marquee {
+  #main .bg-image .marquee {
     font-size: clamp(4ve 4rem 8vw);
     overflow: hidden;
     animation: "slideleft 30s non-linear repeat"; }
@@ -444,157 +471,330 @@ main .bg-image .marquee {
       transform: translateX(0); }
     100% {
       transform: translateX(-100%); } }
-    main .bg-image .marquee .marquee--long span {
-      margin-top: 25vh;
+    #main .bg-image .marquee .marquee--long span {
+      margin-top: 60vh;
       display: inline-block;
       width: var(--tw);
       text-shadow: var(--tw) 0 currentColor, calc(var(--tw) * 2) 0 currentColor, calc(var(--tw) * 3) 0 currentColor, calc(var(--tw) * 4) 0 currentColor;
       will-change: repeat;
       animation: marquee var(--ad) linear infinite; }
-      main .bg-image .marquee .marquee--long span .reel a {
-        width: 100%; }
-        main .bg-image .marquee .marquee--long span .reel a img {
-          width: 20px;
-          height: 20px; }
+      #main .bg-image .marquee .marquee--long span .reel a {
+        width: 100%;
+        margin-bottom: 15vh; }
+        #main .bg-image .marquee .marquee--long span .reel a img {
+          width: 50px;
+          height: 50px; }
+  #main .bg-image .Articulos {
+    padding: 1rem;
+    font-size: 0.9rem; }
+    #main .bg-image .Articulos p {
+      display: none;
+      color: beige; }
+    #main .bg-image .Articulos .snippet {
+      display: block;
+      color: beige;
+      font-weight: 500; }
+    #main .bg-image .Articulos .read-more {
+      display: inline-block;
+      margin-top: 0.5rem;
+      font-size: 0.8rem;
+      font-style: italic;
+      color: beige;
+      text-decoration: none;
+      cursor: pointer; }
   .footer {
     margin-top: 0; }
     .footer .footer-nav {
       display: flex; }
       .footer .footer-nav .footerp {
-        color: bisque; } }
-
-@media (max-width: 425px) {
-  main #bg-dark {
-    background-color: #1f001f;
-    width: 20rem;
-    height: 30px; }
-    main #bg-dark .navbar {
-      display: flex;
-      align-items: left; }
-      main #bg-dark .navbar .navbar-brand {
-        height: 2rem;
-        width: 1rem; }
-      main #bg-dark .navbar .navbar-top {
-        list-style-type: none;
-        display: flex;
-        height: 20px;
-        width: 20px; }
-        main #bg-dark .navbar .navbar-top .navbar-two {
-          background-color: #2b094b;
-          color: ghostwhite;
-          border-radius: 30px 30px 30px 30px;
-          border-color: black;
-          font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-          font-size: xx-small;
-          height: 20px; }
-          main #bg-dark .navbar .navbar-top .navbar-two .nav-two {
-            text-decoration: none;
-            color: ghostwhite;
-            font-style: italic; }
-        main #bg-dark .navbar .navbar-top .navbar-three {
-          background-color: #2b094b;
-          color: ghostwhite;
-          border-radius: 30px 30px 30px 30px;
-          border-color: rgba(0, 0, 0, 0.781);
-          font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-          font-size: xx-small;
-          height: 20px; }
-          main #bg-dark .navbar .navbar-top .navbar-three .nav-three {
-            text-decoration: none;
-            color: ghostwhite;
-            font-style: italic;
-            width: 0.5vh;
-            height: 0.5vh; }
-  main .bg-image .fondo {
-    background-image: url("https://i.gifer.com/7Rrd.gif");
+        color: bisque; }
+  /* INFO.HTML */
+  .bg-image {
+    background-image: url("https://i.ibb.co/DVB5tNW/Fondo.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 50vh;
-    align-self: center; }
-  main .bg-image .marquee {
-    font-size: clamp(4ve 4rem 8vw);
-    overflow: hidden;
-    animation: "slideleft 30s non-linear repeat"; }
-  @keyframes marquee {
-    0% {
-      transform: translateX(0); }
-    100% {
-      transform: translateX(-100%); } }
-    main .bg-image .marquee .marquee--long span {
-      margin-top: 25vh;
-      display: inline-block;
-      width: var(--tw);
-      text-shadow: var(--tw) 0 currentColor, calc(var(--tw) * 2) 0 currentColor, calc(var(--tw) * 3) 0 currentColor, calc(var(--tw) * 4) 0 currentColor;
-      will-change: repeat;
-      animation: marquee var(--ad) linear infinite; }
-      main .bg-image .marquee .marquee--long span .reel a {
-        width: 100%; }
-        main .bg-image .marquee .marquee--long span .reel a img {
-          width: 20px;
-          height: 20px; }
-  /* INFO.HTML */
-  main {
-    height: 100vh; }
-    main .bg-image {
-      background-image: url("https://i.ibb.co/DVB5tNW/Fondo.jpg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      height: 100vh;
+    height: 120vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .bg-image .info .infotitulo {
+      color: bisque;
+      font-size: medium;
+      font-style: italic;
+      font-family: 'Lucida Sans', Times, serif;
+      margin-left: 3vh; }
+    .bg-image .info .infoinfo {
+      color: blanchedalmond;
+      font-size: x-small;
+      text-align: center;
+      font-family: 'Times New Roman', Times, serif;
+      font-weight: 100; }
+    .bg-image .formulario {
       display: flex;
       flex-direction: column;
-      align-items: center; }
-      main .bg-image .info .infotitulo {
-        color: bisque;
-        font-size: x-small;
-        font-style: italic;
-        font-family: 'Lucida Sans', Times, serif;
-        margin-left: 10vh; }
-      main .bg-image .info .infoinfo {
-        color: blanchedalmond;
-        font-size: xx-small;
-        text-align: center;
-        font-family: 'Times New Roman', Times, serif;
-        font-weight: 100; }
-      main .bg-image .formulario {
+      align-items: center;
+      gap: 20px;
+      border-radius: 90px;
+      margin-top: 20px; }
+      .bg-image .formulario #contactForm {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 20px;
-        border-radius: 90px;
-        margin-top: 20px; }
-        main .bg-image .formulario #contactForm {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          gap: 16px; }
-          main .bg-image .formulario #contactForm label {
-            margin-bottom: 8px; }
-          main .bg-image .formulario #contactForm input,
-          main .bg-image .formulario #contactForm textarea {
-            width: 5%;
-            padding: 8px;
-            margin-bottom: 16px;
-            background-color: white; }
-          main .bg-image .formulario #contactForm button {
-            height: 45px;
-            background-color: #0a3369;
-            color: #fff;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 65px;
-            cursor: pointer; }
-        main .bg-image .formulario a {
-          text-decoration: none;
-          color: inherit; }
-        main .bg-image .formulario .infovolver {
+        gap: 16px; }
+        .bg-image .formulario #contactForm label {
+          margin-bottom: 8px; }
+        .bg-image .formulario #contactForm input,
+        .bg-image .formulario #contactForm textarea {
+          width: 50vh;
+          padding: 8px;
+          margin-bottom: 16px;
+          background-color: white; }
+        .bg-image .formulario #contactForm button {
           height: 45px;
           background-color: #0a3369;
           color: #fff;
           padding: 10px 20px;
           border: none;
           border-radius: 65px;
-          cursor: pointer; } }
+          cursor: pointer; }
+      .bg-image .formulario a {
+        text-decoration: none;
+        color: inherit; }
+      .bg-image .formulario .infovolver {
+        height: 45px;
+        background-color: #0a3369;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 65px;
+        cursor: pointer; } }
+
+@media (max-width: 425px) {
+  #main #bg-dark {
+    background-color: #1f001f;
+    width: 20rem;
+    height: 30px; }
+    #main #bg-dark .navbar {
+      display: flex;
+      align-items: left; }
+      #main #bg-dark .navbar .navbar-brand {
+        height: 2rem;
+        width: 1rem; }
+      #main #bg-dark .navbar .navbar-top {
+        list-style-type: none;
+        display: flex;
+        height: 20px;
+        width: 20px; }
+        #main #bg-dark .navbar .navbar-top .navbar-two {
+          background-color: #2b094b;
+          color: ghostwhite;
+          border-radius: 30px 30px 30px 30px;
+          border-color: black;
+          font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+          font-size: xx-small;
+          height: 20px; }
+          #main #bg-dark .navbar .navbar-top .navbar-two .nav-two {
+            text-decoration: none;
+            color: ghostwhite;
+            font-style: italic; }
+        #main #bg-dark .navbar .navbar-top .navbar-three {
+          background-color: #2b094b;
+          color: ghostwhite;
+          border-radius: 30px 30px 30px 30px;
+          border-color: rgba(0, 0, 0, 0.781);
+          font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+          font-size: xx-small;
+          height: 20px; }
+          #main #bg-dark .navbar .navbar-top .navbar-three .nav-three {
+            text-decoration: none;
+            color: ghostwhite;
+            font-style: italic;
+            width: 0.5vh;
+            height: 0.5vh; }
+  #main .bg-image .fondo {
+    background-image: url("https://i.gifer.com/7Rrd.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 80vh;
+    align-self: center; }
+  #main .bg-image .marquee {
+    font-size: clamp(4ve 4rem 8vw);
+    overflow: hidden;
+    animation: "slideleft 30s non-linear repeat"; }
+  @keyframes marquee {
+    0% {
+      transform: translateX(0); }
+    100% {
+      transform: translateX(-100%); } }
+    #main .bg-image .marquee .marquee--long span {
+      margin-top: 60vh;
+      display: inline-block;
+      width: var(--tw);
+      text-shadow: var(--tw) 0 currentColor, calc(var(--tw) * 2) 0 currentColor, calc(var(--tw) * 3) 0 currentColor, calc(var(--tw) * 4) 0 currentColor;
+      will-change: repeat;
+      animation: marquee var(--ad) linear infinite; }
+      #main .bg-image .marquee .marquee--long span .reel a {
+        width: 100%; }
+        #main .bg-image .marquee .marquee--long span .reel a img {
+          width: 80px;
+          height: 80px; }
+  .footer {
+    margin-top: 20vh; }
+    .footer .footer-nav {
+      display: flex; }
+      .footer .footer-nav .footerp {
+        color: bisque; }
+  /* INFO.HTML */
+  .bg-image {
+    background-image: url("https://i.ibb.co/DVB5tNW/Fondo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 120vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .bg-image .info .infotitulo {
+      color: bisque;
+      font-size: medium;
+      font-style: italic;
+      font-family: 'Lucida Sans', Times, serif;
+      margin-left: 3vh; }
+    .bg-image .info .infoinfo {
+      color: blanchedalmond;
+      font-size: x-small;
+      text-align: center;
+      font-family: 'Times New Roman', Times, serif;
+      font-weight: 100; }
+    .bg-image .formulario {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      border-radius: 90px;
+      margin-top: 20px; }
+      .bg-image .formulario #contactForm {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px; }
+        .bg-image .formulario #contactForm label {
+          margin-bottom: 8px; }
+        .bg-image .formulario #contactForm input,
+        .bg-image .formulario #contactForm textarea {
+          width: 50vh;
+          padding: 8px;
+          margin-bottom: 16px;
+          background-color: white; }
+        .bg-image .formulario #contactForm button {
+          height: 45px;
+          background-color: #0a3369;
+          color: #fff;
+          padding: 10px 20px;
+          border: none;
+          border-radius: 65px;
+          cursor: pointer; }
+      .bg-image .formulario a {
+        text-decoration: none;
+        color: inherit; }
+      .bg-image .formulario .infovolver {
+        height: 45px;
+        background-color: #0a3369;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 65px;
+        cursor: pointer; } }
+
+/* INFO.HTML */
+#main {
+  height: 100vh; }
+  #main .bg-image {
+    background-image: url("https://i.ibb.co/DVB5tNW/Fondo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 120vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    #main .bg-image .info .infotitulo {
+      color: bisque;
+      font-size: x-small;
+      font-style: italic;
+      font-family: 'Lucida Sans', Times, serif;
+      margin-left: 10vh; }
+    #main .bg-image .info .infoinfo {
+      color: blanchedalmond;
+      font-size: xx-small;
+      text-align: center;
+      font-family: 'Times New Roman', Times, serif;
+      font-weight: 100; }
+    #main .bg-image .formulario {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      border-radius: 90px;
+      margin-top: 20px; }
+      #main .bg-image .formulario #contactForm {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px; }
+        #main .bg-image .formulario #contactForm label {
+          margin-bottom: 8px; }
+        #main .bg-image .formulario #contactForm input,
+        #main .bg-image .formulario #contactForm textarea {
+          width: 5%;
+          padding: 8px;
+          margin-bottom: 16px;
+          background-color: white; }
+        #main .bg-image .formulario #contactForm button {
+          height: 45px;
+          background-color: #0a3369;
+          color: #fff;
+          padding: 10px 20px;
+          border: none;
+          border-radius: 65px;
+          cursor: pointer; }
+      #main .bg-image .formulario a {
+        text-decoration: none;
+        color: inherit; }
+      #main .bg-image .formulario .infovolver {
+        height: 45px;
+        background-color: #0a3369;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 65px;
+        cursor: pointer; }
+    #main .bg-image .Articulos {
+      padding: 1rem;
+      font-size: 0.9rem; }
+      #main .bg-image .Articulos p {
+        display: none;
+        color: beige; }
+      #main .bg-image .Articulos .snippet {
+        display: block;
+        color: beige;
+        font-weight: 500; }
+      #main .bg-image .Articulos .read-more {
+        display: inline-block;
+        margin-top: 0.5rem;
+        font-size: 0.8rem;
+        font-style: italic;
+        color: beige;
+        text-decoration: none;
+        cursor: pointer; }
+
+@media (min-width: 426px) {
+  .Articulos p {
+    display: block; }
+  .Articulos .snippet,
+  .Articulos .read-more {
+    display: none; } }
 
 * {
   margin: 0;
