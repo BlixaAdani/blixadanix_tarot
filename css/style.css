@@ -727,11 +727,6 @@ main .bg-image .marquee {
         border-radius: 65px;
         cursor: pointer; } }
 
-@media (min-width: 424px) {
-  .bg-image .fondo {
-    width: 100%;
-    height: auto; } }
-
 @media (max-width: 425px) {
   #main #bg-dark {
     background-color: #1f001f;
@@ -932,28 +927,10 @@ main .bg-image .marquee {
         border: none;
         border-radius: 65px;
         cursor: pointer; }
-    #main .bg-image .Articulos {
-      padding: 1rem;
-      font-size: 0.9rem; }
-      #main .bg-image .Articulos p {
-        display: none;
-        color: beige; }
-      #main .bg-image .Articulos .snippet {
-        display: block;
-        color: beige;
-        font-weight: 500; }
-      #main .bg-image .Articulos .read-more {
-        display: inline-block;
-        margin-top: 0.5rem;
-        font-size: 0.8rem;
-        font-style: italic;
-        color: beige;
-        text-decoration: none;
-        cursor: pointer; }
 
 @media (min-width: 426px) {
   .Articulos p {
-    display: block; }
+    display: none; }
   .Articulos .snippet,
   .Articulos .read-more {
     display: none; } }
