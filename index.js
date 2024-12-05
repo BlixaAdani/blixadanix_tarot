@@ -5,8 +5,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
         /*Combinación de usuarios y contraseñas*/
         var validCredentials = [
-            { username: "Prueba", password: "1" },
-            { username: "Prueba", password: "2" }
+            { username: "Blixa", password: "Danix" },
+            { username: "Danix", password: "Blixa" }
         ];
 
         var isValid = false;

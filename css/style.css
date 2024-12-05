@@ -300,57 +300,57 @@ main .bg-image .marquee {
             font-style: italic;
             width: 0.5vh;
             height: 0.5vh; }
-  #main .bg-image .fondo {
-    background-image: url("https://i.gifer.com/7Rrd.gif");
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100% !important;
-    height: 50vh !important; }
-  #main .bg-image .marquee {
-    font-size: clamp(4ve 4rem 8vw);
-    overflow: hidden;
-    animation: "slideleft 30s non-linear repeat"; }
+  #main .bg-image {
+    height: 120vh; }
+    #main .bg-image .fondo {
+      background-image: url("https://i.gifer.com/7Rrd.gif");
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 100%;
+      height: 40vh; }
+    #main .bg-image .marquee {
+      font-size: clamp(4ve 4rem 8vw);
+      overflow: hidden;
+      animation: "slideleft 30s non-linear repeat"; }
   @keyframes marquee {
     0% {
       transform: translateX(0); }
     100% {
       transform: translateX(-100%); } }
-    #main .bg-image .marquee .marquee--long span {
-      margin-top: 70vh !important;
-      display: inline-block;
-      width: var(--tw);
-      text-shadow: var(--tw) 0 currentColor, calc(var(--tw) * 2) 0 currentColor, calc(var(--tw) * 3) 0 currentColor, calc(var(--tw) * 4) 0 currentColor;
-      will-change: repeat;
-      animation: marquee var(--ad) linear infinite; }
-      #main .bg-image .marquee .marquee--long span .reel a {
-        width: 100%; }
-        #main .bg-image .marquee .marquee--long span .reel a img {
-          width: 50px !important;
-          height: 50px !important; }
-  #main .bg-image .Articulos {
-    padding: 1rem;
-    font-size: 0.9rem; }
-    #main .bg-image .Articulos p {
-      display: none;
-      color: beige; }
-    #main .bg-image .Articulos .snippet {
-      display: block;
-      color: beige;
-      font-weight: 500; }
-    #main .bg-image .Articulos .read-more {
-      display: inline-block;
-      margin-top: 0.5rem;
-      font-size: 0.8rem;
-      font-style: italic;
-      color: beige;
-      text-decoration: none;
-      cursor: pointer; }
-  .footer {
-    margin-top: 0; }
-    .footer .footer-nav {
-      display: flex; }
-      .footer .footer-nav .footerp {
-        color: bisque; }
+      #main .bg-image .marquee .marquee--long span {
+        margin-top: 60vh;
+        display: inline-block;
+        width: var(--tw);
+        text-shadow: var(--tw) 0 currentColor, calc(var(--tw) * 2) 0 currentColor, calc(var(--tw) * 3) 0 currentColor, calc(var(--tw) * 4) 0 currentColor;
+        will-change: repeat;
+        animation: marquee var(--ad) linear infinite; }
+        #main .bg-image .marquee .marquee--long span .reel a {
+          width: 100%; }
+          #main .bg-image .marquee .marquee--long span .reel a img {
+            width: 50px;
+            height: 50px; }
+    #main .bg-image .Articulos {
+      padding: 1rem;
+      font-size: 0.9rem; }
+      #main .bg-image .Articulos p {
+        display: none;
+        color: beige; }
+      #main .bg-image .Articulos .snippet {
+        display: block;
+        color: beige;
+        font-weight: 500; }
+      #main .bg-image .Articulos .read-more {
+        display: inline-block;
+        margin-top: 0.5rem;
+        font-size: 0.8rem;
+        font-style: italic;
+        color: beige;
+        text-decoration: none;
+        cursor: pointer; }
+  .footer .footer-nav {
+    display: flex; }
+    .footer .footer-nav .footerp {
+      color: bisque; }
   /* INFO.HTML */
   .bg-image {
     background-image: url("https://i.ibb.co/DVB5tNW/Fondo.jpg");
@@ -460,7 +460,7 @@ main .bg-image .marquee {
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 70vh !important;
+    height: 70vh;
     align-self: center; }
   #main .bg-image .marquee {
     font-size: clamp(4ve 4rem 8vw);
@@ -617,7 +617,7 @@ main .bg-image .marquee {
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 80vh !important;
+    height: 80vh;
     align-self: center; }
   #main .bg-image .marquee {
     font-size: clamp(4ve 4rem 8vw);
@@ -769,39 +769,60 @@ main .bg-image .marquee {
             font-style: italic;
             width: 0.5vh;
             height: 0.5vh; }
-  #main .bg-image .fondo {
-    background-image: url("https://i.gifer.com/7Rrd.gif");
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 80vh;
-    align-self: center; }
-  #main .bg-image .marquee {
-    font-size: clamp(4ve 4rem 8vw);
-    overflow: hidden;
-    animation: "slideleft 30s non-linear repeat"; }
+  #main .bg-image {
+    height: 120vh; }
+    #main .bg-image .fondo {
+      background-image: url("https://i.gifer.com/7Rrd.gif");
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 100%;
+      height: 80vh;
+      align-self: center; }
+    #main .bg-image .marquee {
+      font-size: clamp(4ve 4rem 8vw);
+      overflow: hidden;
+      animation: "slideleft 30s non-linear repeat"; }
   @keyframes marquee {
     0% {
       transform: translateX(0); }
     100% {
       transform: translateX(-100%); } }
-    #main .bg-image .marquee .marquee--long span {
-      margin-top: 60vh;
-      display: inline-block;
-      width: var(--tw);
-      text-shadow: var(--tw) 0 currentColor, calc(var(--tw) * 2) 0 currentColor, calc(var(--tw) * 3) 0 currentColor, calc(var(--tw) * 4) 0 currentColor;
-      will-change: repeat;
-      animation: marquee var(--ad) linear infinite; }
-      #main .bg-image .marquee .marquee--long span .reel a {
-        width: 100%; }
-        #main .bg-image .marquee .marquee--long span .reel a img {
-          width: 80px;
-          height: 80px; }
+      #main .bg-image .marquee .marquee--long span {
+        margin-top: 60vh;
+        display: inline-block;
+        width: var(--tw);
+        text-shadow: var(--tw) 0 currentColor, calc(var(--tw) * 2) 0 currentColor, calc(var(--tw) * 3) 0 currentColor, calc(var(--tw) * 4) 0 currentColor;
+        will-change: repeat;
+        animation: marquee var(--ad) linear infinite; }
+        #main .bg-image .marquee .marquee--long span .reel a {
+          width: 100%; }
+          #main .bg-image .marquee .marquee--long span .reel a img {
+            width: 80px;
+            height: 80px; }
+    #main .bg-image .Articulos {
+      padding: 1rem;
+      font-size: 0.9rem; }
+      #main .bg-image .Articulos p {
+        display: none;
+        color: beige; }
+      #main .bg-image .Articulos .snippet {
+        display: block;
+        color: beige;
+        font-weight: 500; }
+      #main .bg-image .Articulos .read-more {
+        display: inline-block;
+        margin-top: 0.5rem;
+        font-size: 0.8rem;
+        font-style: italic;
+        color: beige;
+        text-decoration: none;
+        cursor: pointer; }
   .footer {
-    margin-top: 20vh; }
+    margin-top: -3vh; }
     .footer .footer-nav {
       display: flex; }
       .footer .footer-nav .footerp {
+        margin-top: 0vh;
         color: bisque; }
   /* INFO.HTML */
   .bg-image {
@@ -865,75 +886,183 @@ main .bg-image .marquee {
         border-radius: 65px;
         cursor: pointer; } }
 
-/* INFO.HTML */
-#main {
-  height: 100vh; }
-  #main .bg-image {
-    background-image: url("https://i.ibb.co/DVB5tNW/Fondo.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 120vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
-    #main .bg-image .info .infotitulo {
-      color: bisque;
-      font-size: x-small;
-      font-style: italic;
-      font-family: 'Lucida Sans', Times, serif;
-      margin-left: 10vh; }
-    #main .bg-image .info .infoinfo {
-      color: blanchedalmond;
-      font-size: xx-small;
-      text-align: center;
-      font-family: 'Times New Roman', Times, serif;
-      font-weight: 100; }
-    #main .bg-image .formulario {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 20px;
-      border-radius: 90px;
-      margin-top: 20px; }
-      #main .bg-image .formulario #contactForm {
+/* INFO.HTML 
+#bg-image {
+        background-image: url('https://i.ibb.co/DVB5tNW/Fondo.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 120vh;
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 16px; }
-        #main .bg-image .formulario #contactForm label {
-          margin-bottom: 8px; }
-        #main .bg-image .formulario #contactForm input,
-        #main .bg-image .formulario #contactForm textarea {
-          width: 5%;
-          padding: 8px;
-          margin-bottom: 16px;
-          background-color: white; }
-        #main .bg-image .formulario #contactForm button {
-          height: 45px;
-          background-color: #0a3369;
-          color: #fff;
-          padding: 10px 20px;
-          border: none;
-          border-radius: 65px;
-          cursor: pointer; }
-      #main .bg-image .formulario a {
-        text-decoration: none;
-        color: inherit; }
-      #main .bg-image .formulario .infovolver {
-        height: 45px;
-        background-color: #0a3369;
-        color: #fff;
-        padding: 10px 20px;
-        border: none;
-        border-radius: 65px;
-        cursor: pointer; }
 
+        .info {
+            .infotitulo {
+                color: bisque;
+                font-size: x-small;
+                font-style: italic;
+                font-family: 'Lucida Sans', Times, serif;
+                margin-left: 10vh;
+            }
+
+            .infoinfo {
+                color: blanchedalmond;
+                font-size: xx-small;
+                text-align: center;
+                font-family: 'Times New Roman', Times, serif;
+                font-weight: 100;
+            }
+        }
+
+        .formulario {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            border-radius: 90px;
+            margin-top: 20px;
+
+            #contactForm {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 16px;
+
+                label {
+                    margin-bottom: 8px;
+                }
+
+                input,
+                textarea {
+                    width: 5%;
+                    padding: 8px;
+                    margin-bottom: 16px;
+                    background-color: white;
+                }
+
+                button {
+                    height: 45px;
+                    background-color: #0a3369;
+                    color: #fff;
+                    padding: 10px 20px;
+                    border: none;
+                    border-radius: 65px;
+                    cursor: pointer;
+                }
+            }
+
+            a {
+                text-decoration: none;
+                color: inherit;
+            }
+
+            .infovolver {
+                height: 45px;
+                background-color: #0a3369;
+                color: #fff;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 65px;
+                cursor: pointer;
+            }
+        }
+    }*/
 @media (min-width: 426px) {
-  .Articulos p {
-    display: none; }
-  .Articulos .snippet,
-  .Articulos .read-more {
-    display: none; } }
+  #main #bg-dark {
+    background-color: #1f001f;
+    width: 20rem;
+    height: 30px; }
+    #main #bg-dark .navbar {
+      display: flex;
+      align-items: left; }
+      #main #bg-dark .navbar .navbar-brand {
+        height: 2rem;
+        width: 1rem; }
+      #main #bg-dark .navbar .navbar-top {
+        list-style-type: none;
+        display: flex;
+        height: 20px;
+        width: 20px; }
+        #main #bg-dark .navbar .navbar-top .navbar-two {
+          background-color: #2b094b;
+          color: ghostwhite;
+          border-radius: 30px 30px 30px 30px;
+          border-color: black;
+          font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+          font-size: xx-small;
+          height: 20px; }
+          #main #bg-dark .navbar .navbar-top .navbar-two .nav-two {
+            text-decoration: none;
+            color: ghostwhite;
+            font-style: italic; }
+        #main #bg-dark .navbar .navbar-top .navbar-three {
+          background-color: #2b094b;
+          color: ghostwhite;
+          border-radius: 30px 30px 30px 30px;
+          border-color: rgba(0, 0, 0, 0.781);
+          font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+          font-size: xx-small;
+          height: 20px; }
+          #main #bg-dark .navbar .navbar-top .navbar-three .nav-three {
+            text-decoration: none;
+            color: ghostwhite;
+            font-style: italic;
+            width: 0.5vh;
+            height: 0.5vh; }
+  #main .bg-image {
+    height: 120vh; }
+    #main .bg-image .fondo {
+      background-image: url("https://s11.gifyu.com/images/SGTb7.gif");
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 100%;
+      height: 50vh; }
+    #main .bg-image .marquee {
+      font-size: clamp(4ve 4rem 8vw);
+      overflow: hidden;
+      animation: "slideleft 30s non-linear repeat"; }
+  @keyframes marquee {
+    0% {
+      transform: translateX(0); }
+    100% {
+      transform: translateX(-100%); } }
+      #main .bg-image .marquee .marquee--long span {
+        margin-top: 40vh;
+        display: inline-block;
+        width: var(--tw);
+        text-shadow: var(--tw) 0 currentColor, calc(var(--tw) * 2) 0 currentColor, calc(var(--tw) * 3) 0 currentColor, calc(var(--tw) * 4) 0 currentColor;
+        will-change: repeat;
+        animation: marquee var(--ad) linear infinite; }
+        #main .bg-image .marquee .marquee--long span .reel a {
+          width: 100%; }
+          #main .bg-image .marquee .marquee--long span .reel a img {
+            width: 50px;
+            height: 50px; }
+    #main .bg-image .Articulos {
+      padding: 1rem;
+      font-size: 0.9rem; }
+      #main .bg-image .Articulos p {
+        display: none;
+        color: beige; }
+      #main .bg-image .Articulos .snippet {
+        display: block;
+        color: beige;
+        font-weight: 500; }
+      #main .bg-image .Articulos .read-more {
+        display: inline-block;
+        margin-top: 0.5rem;
+        font-size: 0.8rem;
+        font-style: italic;
+        color: beige;
+        text-decoration: none;
+        cursor: pointer; } }
+
+.footer {
+  margin-top: -3vh; }
+  .footer .footer-nav {
+    display: flex; }
+    .footer .footer-nav .footerp {
+      color: bisque; }
 
 * {
   margin: 0;
