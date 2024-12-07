@@ -331,7 +331,8 @@ main .bg-image .marquee {
             height: 50px; }
     #main .bg-image .Articulos {
       padding: 1rem;
-      font-size: 0.9rem; }
+      font-size: 0.9rem;
+      margin-top: 10vh; }
       #main .bg-image .Articulos p {
         display: none;
         color: beige; }
@@ -486,7 +487,8 @@ main .bg-image .marquee {
           height: 50px; }
   #main .bg-image .Articulos {
     padding: 1rem;
-    font-size: 0.9rem; }
+    font-size: 0.9rem;
+    margin-top: 10vh; }
     #main .bg-image .Articulos p {
       display: none;
       color: beige; }
@@ -502,12 +504,10 @@ main .bg-image .marquee {
       color: beige;
       text-decoration: none;
       cursor: pointer; }
-  .footer {
-    margin-top: 0; }
-    .footer .footer-nav {
-      display: flex; }
-      .footer .footer-nav .footerp {
-        color: bisque; }
+  .footer .footer-nav {
+    display: flex; }
+    .footer .footer-nav .footerp {
+      color: bisque; }
   /* INFO.HTML */
   .bg-image {
     background-image: url("https://i.ibb.co/DVB5tNW/Fondo.jpg");
@@ -643,7 +643,8 @@ main .bg-image .marquee {
           height: 50px; }
   #main .bg-image .Articulos {
     padding: 1rem;
-    font-size: 0.9rem; }
+    font-size: 0.9rem;
+    margin-top: 10vh; }
     #main .bg-image .Articulos p {
       display: none;
       color: beige; }
@@ -769,61 +770,57 @@ main .bg-image .marquee {
             font-style: italic;
             width: 0.5vh;
             height: 0.5vh; }
-  #main .bg-image {
-    height: 120vh; }
-    #main .bg-image .fondo {
-      background-image: url("https://i.gifer.com/7Rrd.gif");
-      background-repeat: no-repeat;
-      background-size: cover;
-      width: 100%;
-      height: 80vh;
-      align-self: center; }
-    #main .bg-image .marquee {
-      font-size: clamp(4ve 4rem 8vw);
-      overflow: hidden;
-      animation: "slideleft 30s non-linear repeat"; }
+  #main .bg-image .fondo {
+    background-image: url("https://i.gifer.com/7Rrd.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    align-self: center; }
+  #main .bg-image .marquee {
+    font-size: clamp(4ve 4rem 8vw);
+    overflow: hidden;
+    animation: "slideleft 30s non-linear repeat"; }
   @keyframes marquee {
     0% {
       transform: translateX(0); }
     100% {
       transform: translateX(-100%); } }
-      #main .bg-image .marquee .marquee--long span {
-        margin-top: 60vh;
-        display: inline-block;
-        width: var(--tw);
-        text-shadow: var(--tw) 0 currentColor, calc(var(--tw) * 2) 0 currentColor, calc(var(--tw) * 3) 0 currentColor, calc(var(--tw) * 4) 0 currentColor;
-        will-change: repeat;
-        animation: marquee var(--ad) linear infinite; }
-        #main .bg-image .marquee .marquee--long span .reel a {
-          width: 100%; }
-          #main .bg-image .marquee .marquee--long span .reel a img {
-            width: 80px;
-            height: 80px; }
-    #main .bg-image .Articulos {
-      padding: 1rem;
-      font-size: 0.9rem; }
-      #main .bg-image .Articulos p {
-        display: none;
-        color: beige; }
-      #main .bg-image .Articulos .snippet {
-        display: block;
-        color: beige;
-        font-weight: 500; }
-      #main .bg-image .Articulos .read-more {
-        display: inline-block;
-        margin-top: 0.5rem;
-        font-size: 0.8rem;
-        font-style: italic;
-        color: beige;
-        text-decoration: none;
-        cursor: pointer; }
-  .footer {
-    margin-top: -3vh; }
-    .footer .footer-nav {
-      display: flex; }
-      .footer .footer-nav .footerp {
-        margin-top: 0vh;
-        color: bisque; }
+    #main .bg-image .marquee .marquee--long span {
+      margin-top: 50vh;
+      display: inline-block;
+      width: var(--tw);
+      text-shadow: var(--tw) 0 currentColor, calc(var(--tw) * 2) 0 currentColor, calc(var(--tw) * 3) 0 currentColor, calc(var(--tw) * 4) 0 currentColor;
+      will-change: repeat;
+      animation: marquee var(--ad) linear infinite; }
+      #main .bg-image .marquee .marquee--long span .reel a {
+        width: 100%; }
+        #main .bg-image .marquee .marquee--long span .reel a img {
+          width: 80px;
+          height: 80px; }
+  #main .bg-image .Articulos {
+    padding: 1rem;
+    font-size: 0.9rem;
+    margin-top: 10vh; }
+    #main .bg-image .Articulos p {
+      display: none;
+      color: beige; }
+    #main .bg-image .Articulos .snippet {
+      display: block;
+      color: beige;
+      font-weight: 500; }
+    #main .bg-image .Articulos .read-more {
+      display: inline-block;
+      margin-top: 0.5rem;
+      font-size: 0.8rem;
+      font-style: italic;
+      color: beige;
+      text-decoration: none;
+      cursor: pointer; }
+  .footer .footer-nav {
+    display: flex; }
+    .footer .footer-nav .footerp {
+      color: bisque; }
   /* INFO.HTML */
   .bg-image {
     background-image: url("https://i.ibb.co/DVB5tNW/Fondo.jpg");
@@ -967,7 +964,154 @@ main .bg-image .marquee {
             }
         }
     }*/
-@media (min-width: 426px) {
+/* @media (min-width: 426px) {
+    #main {
+        #bg-dark {
+            background-color: rgb(31, 0, 31);
+            width: 20rem;
+            height: 30px;
+
+            .navbar {
+                display: flex;
+                align-items: left;
+
+                .navbar-brand {
+                    height: 2rem;
+                    width: 1rem;
+                }
+
+
+                .navbar-top {
+                    list-style-type: none;
+                    display: flex;
+                    height: 20px;
+                    width: 20px;
+
+                    .navbar-two {
+                        background-color: rgb(43, 9, 75);
+                        color: ghostwhite;
+                        border-radius: 30px 30px 30px 30px;
+                        border-color: black;
+                        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                        font-size: xx-small;
+                        height: 20px;
+
+                        .nav-two {
+                            text-decoration: none;
+                            color: ghostwhite;
+                            font-style: italic;
+                        }
+                    }
+
+                    .navbar-three {
+                        background-color: rgb(43, 9, 75);
+                        color: ghostwhite;
+                        border-radius: 30px 30px 30px 30px;
+                        border-color: rgba(0, 0, 0, 0.781);
+                        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                        font-size: xx-small;
+                        height: 20px;
+
+                        .nav-three {
+                            text-decoration: none;
+                            color: ghostwhite;
+                            font-style: italic;
+                            width: 0.5vh;
+                            height: 0.5vh;
+                        }
+                    }
+                }
+            }
+        }
+
+        .bg-image {
+            height: 80vh;
+            .fondo {
+                background-image: url('https://s11.gifyu.com/images/SGTb7.gif');
+                background-repeat: no-repeat;
+                background-size: cover;
+                width: 100%;
+                height: 40vh;
+            }
+
+            .marquee {
+                font-size: clamp(4ve 4rem 8vw);
+                overflow: hidden;
+                animation: "slideleft 30s non-linear repeat";
+
+                & {
+                    @keyframes marquee {
+                        0% {
+                            transform: translateX(0);
+                        }
+
+                        100% {
+                            transform: translateX(-100%);
+                        }
+                    }
+                }
+
+                .marquee--long {
+                    span {
+                        margin-top: 40vh;
+                        display: inline-block;
+                        width: var(--tw);
+                        text-shadow: var(--tw) 0 currentColor, calc(var(--tw) * 2) 0 currentColor, calc(var(--tw) * 3) 0 currentColor, calc(var(--tw) * 4) 0 currentColor;
+                        will-change: repeat;
+                        animation: marquee var(--ad) linear infinite;
+
+                        .reel a {
+                            width: 100%;
+
+                            img {
+                                width: 50px;
+                                height: 50px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .Articulos {
+                    padding: 1rem;
+                    font-size: 0.9rem;
+    
+                    p {
+                        display: none;
+                        color: beige;
+                    }
+    
+                    .snippet {
+                        display: block;
+                        color: beige;
+                        font-weight: 500;
+                    }
+    
+                    .read-more {
+                        display: inline-block;
+                        margin-top: 0.5rem;
+                        font-size: 0.8rem;
+                        font-style: italic;
+                        color: beige;
+                        text-decoration: none;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+
+    .footer {
+        margin-top: -3vh;
+        .footer-nav {
+            display: flex;
+
+            .footerp {
+                color: bisque;
+            }
+        }
+    } */
+@media (max-width: 768px) {
   #main #bg-dark {
     background-color: #1f001f;
     width: 20rem;
@@ -1012,11 +1156,8 @@ main .bg-image .marquee {
   #main .bg-image {
     height: 120vh; }
     #main .bg-image .fondo {
-      background-image: url("https://s11.gifyu.com/images/SGTb7.gif");
-      background-repeat: no-repeat;
-      background-size: cover;
       width: 100%;
-      height: 50vh; }
+      height: 80vh; }
     #main .bg-image .marquee {
       font-size: clamp(4ve 4rem 8vw);
       overflow: hidden;
@@ -1027,7 +1168,7 @@ main .bg-image .marquee {
     100% {
       transform: translateX(-100%); } }
       #main .bg-image .marquee .marquee--long span {
-        margin-top: 40vh;
+        margin-top: 70vh;
         display: inline-block;
         width: var(--tw);
         text-shadow: var(--tw) 0 currentColor, calc(var(--tw) * 2) 0 currentColor, calc(var(--tw) * 3) 0 currentColor, calc(var(--tw) * 4) 0 currentColor;
@@ -1040,7 +1181,8 @@ main .bg-image .marquee {
             height: 50px; }
     #main .bg-image .Articulos {
       padding: 1rem;
-      font-size: 0.9rem; }
+      font-size: 0.9rem;
+      margin-top: 10vh; }
       #main .bg-image .Articulos p {
         display: none;
         color: beige; }
@@ -1055,14 +1197,105 @@ main .bg-image .marquee {
         font-style: italic;
         color: beige;
         text-decoration: none;
-        cursor: pointer; } }
-
-.footer {
-  margin-top: -3vh; }
+        cursor: pointer; }
   .footer .footer-nav {
     display: flex; }
     .footer .footer-nav .footerp {
-      color: bisque; }
+      color: bisque; } }
+
+@media (max-width: 1024px) {
+  #main #bg-dark {
+    background-color: #1f001f;
+    width: 20rem;
+    height: 30px; }
+    #main #bg-dark .navbar {
+      display: flex;
+      align-items: left; }
+      #main #bg-dark .navbar .navbar-brand {
+        height: 2rem;
+        width: 1rem; }
+      #main #bg-dark .navbar .navbar-top {
+        list-style-type: none;
+        display: flex;
+        height: 20px;
+        width: 20px; }
+        #main #bg-dark .navbar .navbar-top .navbar-two {
+          background-color: #2b094b;
+          color: ghostwhite;
+          border-radius: 30px 30px 30px 30px;
+          border-color: black;
+          font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+          font-size: xx-small;
+          height: 20px; }
+          #main #bg-dark .navbar .navbar-top .navbar-two .nav-two {
+            text-decoration: none;
+            color: ghostwhite;
+            font-style: italic; }
+        #main #bg-dark .navbar .navbar-top .navbar-three {
+          background-color: #2b094b;
+          color: ghostwhite;
+          border-radius: 30px 30px 30px 30px;
+          border-color: rgba(0, 0, 0, 0.781);
+          font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+          font-size: xx-small;
+          height: 20px; }
+          #main #bg-dark .navbar .navbar-top .navbar-three .nav-three {
+            text-decoration: none;
+            color: ghostwhite;
+            font-style: italic;
+            width: 0.5vh;
+            height: 0.5vh; }
+  #main .bg-image {
+    height: 120vh; }
+    #main .bg-image .fondo {
+      width: 100%;
+      height: 80vh; }
+    #main .bg-image .marquee {
+      font-size: clamp(4ve 4rem 8vw);
+      overflow: hidden;
+      animation: "slideleft 30s non-linear repeat"; }
+  @keyframes marquee {
+    0% {
+      transform: translateX(0); }
+    100% {
+      transform: translateX(-100%); } }
+      #main .bg-image .marquee .marquee--long span {
+        margin-top: 70vh;
+        display: inline-block;
+        width: var(--tw);
+        text-shadow: var(--tw) 0 currentColor, calc(var(--tw) * 2) 0 currentColor, calc(var(--tw) * 3) 0 currentColor, calc(var(--tw) * 4) 0 currentColor;
+        will-change: repeat;
+        animation: marquee var(--ad) linear infinite; }
+        #main .bg-image .marquee .marquee--long span .reel a {
+          width: 100%; }
+          #main .bg-image .marquee .marquee--long span .reel a img {
+            width: 50px;
+            height: 50px; }
+    #main .bg-image .Articulos {
+      padding: 1rem;
+      font-size: 0.9rem;
+      margin-top: 10vh; }
+      #main .bg-image .Articulos p {
+        display: none;
+        color: beige; }
+      #main .bg-image .Articulos .snippet {
+        display: block;
+        color: beige;
+        font-weight: 500; }
+      #main .bg-image .Articulos .read-more {
+        display: inline-block;
+        margin-top: 0.5rem;
+        font-size: 0.8rem;
+        font-style: italic;
+        color: beige;
+        text-decoration: none;
+        cursor: pointer; }
+  .footer {
+    margin-top: -3vh; }
+    .footer .footer-nav {
+      display: flex; }
+      .footer .footer-nav .footerp {
+        color: bisque; } }
 
 * {
   margin: 0;
