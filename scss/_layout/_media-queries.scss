@@ -64,8 +64,9 @@
                 background-image: url("/assets/orbmobile.webp") !important;
                 background-repeat: no-repeat;
                 background-size: cover;
+                background-position: center;
                 width: 100%;
-                height: 60vh !important;
+                height: 60vh;
             }
 
             .marquee {
@@ -94,11 +95,7 @@
                         animation: marquee var(--ad) linear infinite;
                         overflow: hidden;
 
-                        .reel a {
-                            width: 100%;
-                            height: -30px;
-
-                            img {
+                        img {
                                 width: 50px;
                                 height: 50px;
                             }
@@ -227,7 +224,6 @@
             }
         }
     }
-}
 
 
 @media (max-width: 375px) {
@@ -295,6 +291,7 @@
                 background-image: url('https://i.gifer.com/7Rrd.gif');
                 background-repeat: no-repeat;
                 background-size: cover;
+                background-position: center;
                 width: 100%;
                 height: 70vh;
                 align-self: center;
@@ -443,6 +440,7 @@
                 background-image: url('https://i.gifer.com/7Rrd.gif');
                 background-repeat: no-repeat;
                 background-size: cover;
+                background-position: center;
                 width: 100%;
                 height: 80vh;
                 align-self: center;
@@ -593,9 +591,9 @@
                 background-image: url('https://i.gifer.com/7Rrd.gif');
                 background-repeat: no-repeat;
                 background-size: cover;
+                background-position: center;
                 width: 100%;
                 height: 100vh;
-                align-self: center;
             }
 
             .marquee {
@@ -675,89 +673,7 @@
     }
 }
 
-/* INFO.HTML 
-#bg-image {
-        background-image: url('https://i.ibb.co/DVB5tNW/Fondo.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 120vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        .info {
-            .infotitulo {
-                color: bisque;
-                font-size: x-small;
-                font-style: italic;
-                font-family: 'Lucida Sans', Times, serif;
-                margin-left: 10vh;
-            }
-
-            .infoinfo {
-                color: blanchedalmond;
-                font-size: xx-small;
-                text-align: center;
-                font-family: 'Times New Roman', Times, serif;
-                font-weight: 100;
-            }
-        }
-
-        .formulario {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 20px;
-            border-radius: 90px;
-            margin-top: 20px;
-
-            #contactForm {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                gap: 16px;
-
-                label {
-                    margin-bottom: 8px;
-                }
-
-                input,
-                textarea {
-                    width: 5%;
-                    padding: 8px;
-                    margin-bottom: 16px;
-                    background-color: white;
-                }
-
-                button {
-                    height: 45px;
-                    background-color: #0a3369;
-                    color: #fff;
-                    padding: 10px 20px;
-                    border: none;
-                    border-radius: 65px;
-                    cursor: pointer;
-                }
-            }
-
-            a {
-                text-decoration: none;
-                color: inherit;
-            }
-
-            .infovolver {
-                height: 45px;
-                background-color: #0a3369;
-                color: #fff;
-                padding: 10px 20px;
-                border: none;
-                border-radius: 65px;
-                cursor: pointer;
-            }
-        }
-    }*/
-
- @media (min-width: 426px) {
+@media (min-width: 426px) {
     #main {
         #bg-dark {
             background-color: rgb(31, 0, 31);
@@ -823,6 +739,7 @@
                 background-image: url('https://s11.gifyu.com/images/SGTb7.gif');
                 background-repeat: no-repeat;
                 background-size: cover;
+                background-position: center;
                 width: 100%;
                 height: 40vh;
             }
@@ -846,14 +763,14 @@
 
                 .marquee--long {
                     span {
-                        margin-top: 50vh;
+                        margin-top: 60vh;
                         display: inline-block;
                         width: var(--tw);
                         text-shadow: var(--tw) 0 currentColor, calc(var(--tw) * 2) 0 currentColor, calc(var(--tw) * 3) 0 currentColor, calc(var(--tw) * 4) 0 currentColor;
                         will-change: repeat;
                         animation: marquee var(--ad) linear infinite;
 
-                        .reel a {
+                        span {
                             width: 100%;
 
                             img {
@@ -904,6 +821,76 @@
             }
         }
     }
+
+    #info-image {
+        background-image: url('/assets/storetree.gif');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+        .formulario {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            border-radius: 90px;
+            margin-top: 20px;
+            height: 125vh;
+    
+    
+            .text-center {
+                color: aliceblue;
+                font-style: italic;
+                font-family: 'Lucida Sans', Times, serif;
+            }
+    
+                .infoinfo {
+                    color: blanchedalmond;
+                    font-size: medium;
+                    text-align: center;
+                    font-family: 'Times New Roman', Times, serif;
+                    font-weight: 100;
+                }
+    
+                        #contactForm {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            gap: 16px;
+    
+                            label {
+                                margin-bottom: 8px;
+                            }
+    
+                            input,
+                            textarea {
+                                width: 80%;
+                                padding: 8px;
+                                margin-bottom: 16px;
+                                background-color: white;
+                            }
+    
+                            button {
+                                height: 45px;
+                                background-color: #0a3369;
+                                color: #fff;
+                                padding: 10px 20px;
+                                border: none;
+                                border-radius: 65px;
+                                cursor: pointer;
+                            }
+                        }
+    
+                        a {
+                            text-decoration: none;
+                            color: inherit;
+                        }
+                    }
+                }
 
 @media (max-width: 768px) {
     #main {
@@ -967,6 +954,7 @@
 
         .bg-image {
             height: 120vh;
+            background-position: center;
             .fondo {
                 width: 100%;
                 height: 120vh;
@@ -991,7 +979,6 @@
 
                 .marquee--long {
                     span {
-                        margin-top: 60vh;
                         display: inline-block;
                         width: var(--tw);
                         text-shadow: var(--tw) 0 currentColor, calc(var(--tw) * 2) 0 currentColor, calc(var(--tw) * 3) 0 currentColor, calc(var(--tw) * 4) 0 currentColor;
@@ -1047,6 +1034,70 @@
             }
         }
     }
+
+    #info-image {
+        background-image: url('/assets/storetree.gif');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+        .formulario {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            border-radius: 90px;
+            margin-top: 20px;
+    
+    
+            .text-center {
+                color: aliceblue;
+                font-style: italic;
+                font-family: 'Lucida Sans', Times, serif;
+            }
+    
+                .infoinfo {
+                    color: blanchedalmond;
+                    font-size: medium;
+                    text-align: center;
+                    font-family: 'Times New Roman', Times, serif;
+                    font-weight: 100;
+                }
+    
+                        #contactForm {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            gap: 16px;
+    
+                            label {
+                                margin-bottom: 8px;
+                            }
+    
+                            input,
+                            textarea {
+                                width: 80vh;
+                                padding: 8px;
+                                margin-bottom: 16px;
+                                background-color: white;
+                            }
+    
+                            button {
+                                height: 45px;
+                                background-color: #0a3369;
+                                color: #fff;
+                                padding: 10px 20px;
+                                border: none;
+                                border-radius: 65px;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
+
 }
 
 @media (max-width: 1024px) {
@@ -1255,7 +1306,7 @@
         }
 
         .bg-image {
-            height: 120vh;
+            height: 100%;
             .fondo {
                 width: 100%;
                 height: 120vh;
@@ -1399,8 +1450,8 @@
             }
         }
 
-        .bg-image {
-            height: 120vh;
+        #bg-image {
+            height: 150vh;
             .fondo {
                 width: 100%;
             }

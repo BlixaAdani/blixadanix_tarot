@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
         if (isValid) {
             alert("Login successful!");
-            window.location.href = "loginyes.html"
+            window.location.href = "https://allblixadanix.wordpress.com"
         } else {
             alert("Invalid username or password. Please try again.");
         }

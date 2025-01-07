@@ -1,5 +1,9 @@
-main {
-    .bg-image {
+#main{
+.bg-image {
+    height: 100%;
+    background-image: url('/assets/Fondo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
         .fondo {
             width: 100%;
             background-image: url('https://s11.gifyu.com/images/SGTb7.gif');
@@ -34,20 +38,15 @@ main {
                     will-change: repeat;
                     animation: marquee var(--ad) linear infinite;
 
-                    .reel a {
-                        width: 100%;
-
-                        img {
-                            width: 90px;
-                            height: 90px;
-                        }
+                    img {
+                        width: 90px;
+                        height: 90px;
                     }
                 }
             }
         }
     }
 }
-
 
 
 /* ENTER.HTML */
@@ -114,99 +113,44 @@ main {
 
 /* INFO.HTML */
 
-.bg-image {
-    background-image: url('https://i.ibb.co/DVB5tNW/Fondo.jpg');
+#info-image {
+    background-image: url('/assets/storetree.gif');
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    background-position: center;
+    height: 120vh;
     display: flex;
     flex-direction: column;
     align-items: center;
 
-    .info {
-        .infotitulo {
-            color: bisque;
-            font-size:xxx-large;
+    .formulario {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        border-radius: 90px;
+        margin-top: 20px;
+
+
+        .text-center {
+            color: aliceblue;
             font-style: italic;
             font-family: 'Lucida Sans', Times, serif;
         }
-        .infoinfo {
-            color: blanchedalmond;
-            font-size: medium;
-            text-align: center;
-            font-family: 'Times New Roman', Times, serif;
-            font-weight: 100;
-        }
-    }
-        .formulario {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 20px;
-            border-radius: 90px;
-            margin-top: 20px;
-        
-            #contactForm {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                gap: 16px;
-        
-                label {
-                    margin-bottom: 8px;
-                }
-        
-                input,
-                textarea {
-                    width: 100vh;
-                    padding: 8px;
-                    margin-bottom: 16px;
-                    background-color: white;
-                }
-        
-                button {
-                    height: 45px;
-                    background-color: #0a3369;
-                    color: #fff;
-                    padding: 10px 20px;
-                    border: none;
-                    border-radius: 65px;
-                    cursor: pointer;
-                }
-            }
-        
-            a {
-                text-decoration: none;
-                color: inherit;
-            }
-        .infovolver {
-                    height: 45px;
-                    background-color: #0a3369;
-                    color: #fff;
-                    padding: 10px 20px;
-                    border: none;
-                    border-radius: 65px;
-                    cursor: pointer;
-        }
-        }
-    }
 
-        /* .formulario {
-            #contactForm {
-                .body_us {
-                    font-family: Arial, sans-serif;
-                    margin: 0;
-                    padding: 0;
-                    background-color: #1e1c88;
+            .infoinfo {
+                color: blanchedalmond;
+                font-size: medium;
+                text-align: center;
+                font-family: 'Times New Roman', Times, serif;
+                font-weight: 100;
+            }
 
-                    .main_us {
-                        display: block;
-                        max-width: 600px;
-                        margin: 20px auto;
-                        padding: 20px;
-                        background-color: #fff;
-                        box-shadow: 0 0 10px rgba(138, 12, 223, 0.1);
-                        border-radius: 5px;
+                    #contactForm {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        gap: 16px;
 
                         label {
                             margin-bottom: 8px;
@@ -214,21 +158,94 @@ main {
 
                         input,
                         textarea {
-                            width: 100%;
+                            width: 100vh;
                             padding: 8px;
                             margin-bottom: 16px;
-
-                            button {
-                                background-color: #333333;
-                                color: #fff;
-                                padding: 10px 20px;
-                                border: none;
-                                border-radius: 3px;
-                                cursor: pointer;
-                            }
+                            background-color: white;
                         }
+
+                        button {
+                            height: 45px;
+                            background-color: #0a3369;
+                            color: #fff;
+                            padding: 10px 20px;
+                            border: none;
+                            border-radius: 65px;
+                            cursor: pointer;
+                        }
+                    }
+
+                    a {
+                        text-decoration: none;
+                        color: inherit;
                     }
                 }
             }
+
+            
+/* STORE.HTML */
+
+.body_store {
+    background-image: url('../assets/kabbala.gif');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: firebrick;
+    height: 120vh;
+
+    .tree-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(4, auto);
+        gap: 10px;
+        align-items: center;
+        justify-items: center;
+        height: 100%;
+        width: 100%;
+
+        .circle-link {
+            background-color: rgba(30, 4, 73, 0.5);
+            color: rgb(255, 255, 255);
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            transform: rotateX(25deg) rotateZ(25deg);
+            font-size: 16px;
+            text-decoration: none;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &:hover {
+                background-color: goldenrod;
+                transform: rotateX(0deg) rotateZ(0deg);
+            }
         }
-    } */
+    }
+}
+
+.tree-container > a:nth-child(1),
+.tree-container > a:nth-child(2){
+    grid-row: 1;
+    grid-column: 2;
+}
+
+.tree-container > a:nth-child(3){
+    grid-row: 1;
+    grid-column: 3;
+} 
+
+.tree-container > a:nth-child(4),
+.tree-container > a:nth-child(5),
+.tree-container > a:nth-child(6)
+{
+    grid-row: 3;
+    grid-column: span 1;
+}
+
+.tree-container > a:nth-child(7) {
+    grid-row: 4;
+    grid-column: span 4;
+}

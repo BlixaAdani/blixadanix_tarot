@@ -73,33 +73,35 @@
           color: ghostwhite;
           font-style: italic; }
 
-main .bg-image .fondo {
-  width: 100%;
-  background-image: url("https://s11.gifyu.com/images/SGTb7.gif");
+#main .bg-image {
+  height: 100%;
+  background-image: url("/assets/Fondo.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
-  height: 110vh; }
-
-main .bg-image .marquee {
-  font-size: clamp(4ve 4rem 8vw);
-  overflow: hidden;
-  animation: "slideleft 30s non-linear repeat"; }
+  background-size: cover; }
+  #main .bg-image .fondo {
+    width: 100%;
+    background-image: url("https://s11.gifyu.com/images/SGTb7.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 110vh; }
+  #main .bg-image .marquee {
+    font-size: clamp(4ve 4rem 8vw);
+    overflow: hidden;
+    animation: "slideleft 30s non-linear repeat"; }
 
 @keyframes marquee {
   0% {
     transform: translateX(0); }
   100% {
     transform: translateX(-100%); } }
-  main .bg-image .marquee .marquee--long span {
-    margin-top: 90vh;
-    display: inline-block;
-    width: var(--tw);
-    text-shadow: var(--tw) 0 currentColor, calc(var(--tw) * 2) 0 currentColor, calc(var(--tw) * 3) 0 currentColor, calc(var(--tw) * 4) 0 currentColor;
-    will-change: repeat;
-    animation: marquee var(--ad) linear infinite; }
-    main .bg-image .marquee .marquee--long span .reel a {
-      width: 100%; }
-      main .bg-image .marquee .marquee--long span .reel a img {
+    #main .bg-image .marquee .marquee--long span {
+      margin-top: 90vh;
+      display: inline-block;
+      width: var(--tw);
+      text-shadow: var(--tw) 0 currentColor, calc(var(--tw) * 2) 0 currentColor, calc(var(--tw) * 3) 0 currentColor, calc(var(--tw) * 4) 0 currentColor;
+      will-change: repeat;
+      animation: marquee var(--ad) linear infinite; }
+      #main .bg-image .marquee .marquee--long span img {
         width: 90px;
         height: 90px; }
 
@@ -149,46 +151,46 @@ main .bg-image .marquee {
       color: black; }
 
 /* INFO.HTML */
-.bg-image {
-  background-image: url("https://i.ibb.co/DVB5tNW/Fondo.jpg");
+#info-image {
+  background-image: url("/assets/storetree.gif");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  background-position: center;
+  height: 120vh;
   display: flex;
   flex-direction: column;
   align-items: center; }
-  .bg-image .info .infotitulo {
-    color: bisque;
-    font-size: xxx-large;
-    font-style: italic;
-    font-family: 'Lucida Sans', Times, serif; }
-  .bg-image .info .infoinfo {
-    color: blanchedalmond;
-    font-size: medium;
-    text-align: center;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: 100; }
-  .bg-image .formulario {
+  #info-image .formulario {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
     border-radius: 90px;
     margin-top: 20px; }
-    .bg-image .formulario #contactForm {
+    #info-image .formulario .text-center {
+      color: aliceblue;
+      font-style: italic;
+      font-family: 'Lucida Sans', Times, serif; }
+    #info-image .formulario .infoinfo {
+      color: blanchedalmond;
+      font-size: medium;
+      text-align: center;
+      font-family: 'Times New Roman', Times, serif;
+      font-weight: 100; }
+    #info-image .formulario #contactForm {
       display: flex;
       flex-direction: column;
       align-items: center;
       gap: 16px; }
-      .bg-image .formulario #contactForm label {
+      #info-image .formulario #contactForm label {
         margin-bottom: 8px; }
-      .bg-image .formulario #contactForm input,
-      .bg-image .formulario #contactForm textarea {
+      #info-image .formulario #contactForm input,
+      #info-image .formulario #contactForm textarea {
         width: 100vh;
         padding: 8px;
         margin-bottom: 16px;
         background-color: white; }
-      .bg-image .formulario #contactForm button {
+      #info-image .formulario #contactForm button {
         height: 45px;
         background-color: #0a3369;
         color: #fff;
@@ -196,59 +198,64 @@ main .bg-image .marquee {
         border: none;
         border-radius: 65px;
         cursor: pointer; }
-    .bg-image .formulario a {
+    #info-image .formulario a {
       text-decoration: none;
       color: inherit; }
-    .bg-image .formulario .infovolver {
-      height: 45px;
-      background-color: #0a3369;
-      color: #fff;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 65px;
-      cursor: pointer; }
 
-/* .formulario {
-            #contactForm {
-                .body_us {
-                    font-family: Arial, sans-serif;
-                    margin: 0;
-                    padding: 0;
-                    background-color: #1e1c88;
+/* STORE.HTML */
+.body_store {
+  background-image: url("../assets/kabbala.gif");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: firebrick;
+  height: 120vh; }
+  .body_store .tree-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(4, auto);
+    gap: 10px;
+    align-items: center;
+    justify-items: center;
+    height: 100%;
+    width: 100%; }
+    .body_store .tree-container .circle-link {
+      background-color: rgba(30, 4, 73, 0.5);
+      color: white;
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+      transform: rotateX(25deg) rotateZ(25deg);
+      font-size: 16px;
+      text-decoration: none;
+      transition: transform 0.3s ease, background-color 0.3s ease;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      .body_store .tree-container .circle-link:hover {
+        background-color: goldenrod;
+        transform: rotateX(0deg) rotateZ(0deg); }
 
-                    .main_us {
-                        display: block;
-                        max-width: 600px;
-                        margin: 20px auto;
-                        padding: 20px;
-                        background-color: #fff;
-                        box-shadow: 0 0 10px rgba(138, 12, 223, 0.1);
-                        border-radius: 5px;
+.tree-container > a:nth-child(1),
+.tree-container > a:nth-child(2) {
+  grid-row: 1;
+  grid-column: 2; }
 
-                        label {
-                            margin-bottom: 8px;
-                        }
+.tree-container > a:nth-child(3) {
+  grid-row: 1;
+  grid-column: 3; }
 
-                        input,
-                        textarea {
-                            width: 100%;
-                            padding: 8px;
-                            margin-bottom: 16px;
+.tree-container > a:nth-child(4),
+.tree-container > a:nth-child(5),
+.tree-container > a:nth-child(6) {
+  grid-row: 3;
+  grid-column: span 1; }
 
-                            button {
-                                background-color: #333333;
-                                color: #fff;
-                                padding: 10px 20px;
-                                border: none;
-                                border-radius: 3px;
-                                cursor: pointer;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    } */
+.tree-container > a:nth-child(7) {
+  grid-row: 4;
+  grid-column: span 4; }
+
 .footer {
   width: 100%;
   background-color: #1f001f;
@@ -306,8 +313,9 @@ main .bg-image .marquee {
       background-image: url("/assets/orbmobile.webp") !important;
       background-repeat: no-repeat;
       background-size: cover;
+      background-position: center;
       width: 100%;
-      height: 60vh !important; }
+      height: 60vh; }
     #main .bg-image .marquee {
       font-size: clamp(4ve 4rem 8vw);
       overflow: hidden;
@@ -324,95 +332,94 @@ main .bg-image .marquee {
         will-change: repeat;
         animation: marquee var(--ad) linear infinite;
         overflow: hidden; }
-        #main .bg-image .marquee .marquee--long span .reel a {
-          width: 100%;
-          height: -30px; }
-          #main .bg-image .marquee .marquee--long span .reel a img {
-            width: 50px;
-            height: 50px; }
-    #main .bg-image .Articulos {
-      padding: 1rem;
-      font-size: 1rem; }
-      #main .bg-image .Articulos p {
-        display: none;
-        color: beige; }
-      #main .bg-image .Articulos .snippet {
-        display: block;
-        color: beige;
-        font-weight: 500; }
-      #main .bg-image .Articulos .read-more {
-        display: inline-block;
-        margin-top: 0.5rem;
-        font-size: 0.8rem;
-        font-style: italic;
-        color: beige;
-        text-decoration: none;
-        cursor: pointer; }
-  .footer .footer-nav {
-    display: flex; }
-    .footer .footer-nav .footerp {
-      color: bisque; }
-  /* INFO.HTML */
-  #bg-image {
-    background-image: url("https://i.ibb.co/DVB5tNW/Fondo.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 120vh;
+        #main .bg-image .marquee .marquee--long span img {
+          width: 50px;
+          height: 50px; }
+  #main .Articulos {
+    padding: 1rem;
+    font-size: 1rem; }
+    #main .Articulos p {
+      display: none;
+      color: beige; }
+    #main .Articulos .snippet {
+      display: block;
+      color: beige;
+      font-weight: 500; }
+    #main .Articulos .read-more {
+      display: inline-block;
+      margin-top: 0.5rem;
+      font-size: 0.8rem;
+      font-style: italic;
+      color: beige;
+      text-decoration: none;
+      cursor: pointer; } }
+
+.footer .footer-nav {
+  display: flex; }
+  .footer .footer-nav .footerp {
+    color: bisque; }
+
+/* INFO.HTML */
+#bg-image {
+  background-image: url("https://i.ibb.co/DVB5tNW/Fondo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 120vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  #bg-image .info .infotitulo {
+    color: bisque;
+    font-size: medium;
+    font-style: italic;
+    font-family: 'Lucida Sans', Times, serif;
+    justify-content: center; }
+  #bg-image .info .infoinfo {
+    color: blanchedalmond;
+    font-size: x-small;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 100; }
+  #bg-image .formulario {
     display: flex;
     flex-direction: column;
-    align-items: center; }
-    #bg-image .info .infotitulo {
-      color: bisque;
-      font-size: medium;
-      font-style: italic;
-      font-family: 'Lucida Sans', Times, serif;
-      justify-content: center; }
-    #bg-image .info .infoinfo {
-      color: blanchedalmond;
-      font-size: x-small;
-      text-align: center;
-      font-family: 'Times New Roman', Times, serif;
-      font-weight: 100; }
-    #bg-image .formulario {
+    align-items: center;
+    gap: 20px;
+    border-radius: 90px;
+    margin-top: 20px; }
+    #bg-image .formulario #contactForm {
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 20px;
-      border-radius: 90px;
-      margin-top: 20px; }
-      #bg-image .formulario #contactForm {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 16px; }
-        #bg-image .formulario #contactForm label {
-          margin-bottom: 8px; }
-        #bg-image .formulario #contactForm input,
-        #bg-image .formulario #contactForm textarea {
-          width: 50vh;
-          padding: 8px;
-          margin-bottom: 16px;
-          background-color: white; }
-        #bg-image .formulario #contactForm button {
-          height: 45px;
-          background-color: #0a3369;
-          color: #fff;
-          padding: 10px 20px;
-          border: none;
-          border-radius: 65px;
-          cursor: pointer; }
-      #bg-image .formulario a {
-        text-decoration: none;
-        color: inherit; }
-      #bg-image .formulario .infovolver {
+      gap: 16px; }
+      #bg-image .formulario #contactForm label {
+        margin-bottom: 8px; }
+      #bg-image .formulario #contactForm input,
+      #bg-image .formulario #contactForm textarea {
+        width: 50vh;
+        padding: 8px;
+        margin-bottom: 16px;
+        background-color: white; }
+      #bg-image .formulario #contactForm button {
         height: 45px;
         background-color: #0a3369;
         color: #fff;
         padding: 10px 20px;
         border: none;
         border-radius: 65px;
-        cursor: pointer; } }
+        cursor: pointer; }
+    #bg-image .formulario a {
+      text-decoration: none;
+      color: inherit; }
+    #bg-image .formulario .infovolver {
+      height: 45px;
+      background-color: #0a3369;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 65px;
+      cursor: pointer; }
 
 @media (max-width: 375px) {
   #main #bg-dark {
@@ -460,6 +467,7 @@ main .bg-image .marquee {
     background-image: url("https://i.gifer.com/7Rrd.gif");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     width: 100%;
     height: 70vh;
     align-self: center; }
@@ -554,6 +562,7 @@ main .bg-image .marquee {
     background-image: url("https://i.gifer.com/7Rrd.gif");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     width: 100%;
     height: 80vh;
     align-self: center; }
@@ -650,9 +659,9 @@ main .bg-image .marquee {
     background-image: url("https://i.gifer.com/7Rrd.gif");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     width: 100%;
-    height: 100vh;
-    align-self: center; }
+    height: 100vh; }
   #main .bg-image .marquee {
     font-size: clamp(4ve 4rem 8vw);
     overflow: hidden;
@@ -697,87 +706,6 @@ main .bg-image .marquee {
     .footer .footer-nav .footerp {
       color: bisque; } }
 
-/* INFO.HTML 
-#bg-image {
-        background-image: url('https://i.ibb.co/DVB5tNW/Fondo.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 120vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        .info {
-            .infotitulo {
-                color: bisque;
-                font-size: x-small;
-                font-style: italic;
-                font-family: 'Lucida Sans', Times, serif;
-                margin-left: 10vh;
-            }
-
-            .infoinfo {
-                color: blanchedalmond;
-                font-size: xx-small;
-                text-align: center;
-                font-family: 'Times New Roman', Times, serif;
-                font-weight: 100;
-            }
-        }
-
-        .formulario {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 20px;
-            border-radius: 90px;
-            margin-top: 20px;
-
-            #contactForm {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                gap: 16px;
-
-                label {
-                    margin-bottom: 8px;
-                }
-
-                input,
-                textarea {
-                    width: 5%;
-                    padding: 8px;
-                    margin-bottom: 16px;
-                    background-color: white;
-                }
-
-                button {
-                    height: 45px;
-                    background-color: #0a3369;
-                    color: #fff;
-                    padding: 10px 20px;
-                    border: none;
-                    border-radius: 65px;
-                    cursor: pointer;
-                }
-            }
-
-            a {
-                text-decoration: none;
-                color: inherit;
-            }
-
-            .infovolver {
-                height: 45px;
-                background-color: #0a3369;
-                color: #fff;
-                padding: 10px 20px;
-                border: none;
-                border-radius: 65px;
-                cursor: pointer;
-            }
-        }
-    }*/
 @media (min-width: 426px) {
   #main #bg-dark {
     background-color: #1f001f;
@@ -826,6 +754,7 @@ main .bg-image .marquee {
       background-image: url("https://s11.gifyu.com/images/SGTb7.gif");
       background-repeat: no-repeat;
       background-size: cover;
+      background-position: center;
       width: 100%;
       height: 40vh; }
     #main .bg-image .marquee {
@@ -838,15 +767,15 @@ main .bg-image .marquee {
     100% {
       transform: translateX(-100%); } }
       #main .bg-image .marquee .marquee--long span {
-        margin-top: 50vh;
+        margin-top: 60vh;
         display: inline-block;
         width: var(--tw);
         text-shadow: var(--tw) 0 currentColor, calc(var(--tw) * 2) 0 currentColor, calc(var(--tw) * 3) 0 currentColor, calc(var(--tw) * 4) 0 currentColor;
         will-change: repeat;
         animation: marquee var(--ad) linear infinite; }
-        #main .bg-image .marquee .marquee--long span .reel a {
+        #main .bg-image .marquee .marquee--long span span {
           width: 100%; }
-          #main .bg-image .marquee .marquee--long span .reel a img {
+          #main .bg-image .marquee .marquee--long span span img {
             width: 50px;
             height: 50px; }
     #main .bg-image .Articulos {
@@ -874,6 +803,58 @@ main .bg-image .marquee {
     display: flex; }
     .footer .footer-nav .footerp {
       color: bisque; }
+
+#info-image {
+  background-image: url("/assets/storetree.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  #info-image .formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    border-radius: 90px;
+    margin-top: 20px;
+    height: 125vh; }
+    #info-image .formulario .text-center {
+      color: aliceblue;
+      font-style: italic;
+      font-family: 'Lucida Sans', Times, serif; }
+    #info-image .formulario .infoinfo {
+      color: blanchedalmond;
+      font-size: medium;
+      text-align: center;
+      font-family: 'Times New Roman', Times, serif;
+      font-weight: 100; }
+    #info-image .formulario #contactForm {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px; }
+      #info-image .formulario #contactForm label {
+        margin-bottom: 8px; }
+      #info-image .formulario #contactForm input,
+      #info-image .formulario #contactForm textarea {
+        width: 80%;
+        padding: 8px;
+        margin-bottom: 16px;
+        background-color: white; }
+      #info-image .formulario #contactForm button {
+        height: 45px;
+        background-color: #0a3369;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 65px;
+        cursor: pointer; }
+    #info-image .formulario a {
+      text-decoration: none;
+      color: inherit; }
 
 @media (max-width: 768px) {
   #main #bg-dark {
@@ -918,7 +899,8 @@ main .bg-image .marquee {
             width: 0.5vh;
             height: 0.5vh; }
   #main .bg-image {
-    height: 120vh; }
+    height: 120vh;
+    background-position: center; }
     #main .bg-image .fondo {
       width: 100%;
       height: 120vh; }
@@ -932,7 +914,6 @@ main .bg-image .marquee {
     100% {
       transform: translateX(-100%); } }
       #main .bg-image .marquee .marquee--long span {
-        margin-top: 60vh;
         display: inline-block;
         width: var(--tw);
         text-shadow: var(--tw) 0 currentColor, calc(var(--tw) * 2) 0 currentColor, calc(var(--tw) * 3) 0 currentColor, calc(var(--tw) * 4) 0 currentColor;
@@ -964,7 +945,53 @@ main .bg-image .marquee {
   .footer .footer-nav {
     display: flex; }
     .footer .footer-nav .footerp {
-      color: bisque; } }
+      color: bisque; }
+  #info-image {
+    background-image: url("/assets/storetree.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    #info-image .formulario {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      border-radius: 90px;
+      margin-top: 20px; }
+      #info-image .formulario .text-center {
+        color: aliceblue;
+        font-style: italic;
+        font-family: 'Lucida Sans', Times, serif; }
+      #info-image .formulario .infoinfo {
+        color: blanchedalmond;
+        font-size: medium;
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 100; }
+      #info-image .formulario #contactForm {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px; }
+        #info-image .formulario #contactForm label {
+          margin-bottom: 8px; }
+        #info-image .formulario #contactForm input,
+        #info-image .formulario #contactForm textarea {
+          width: 80vh;
+          padding: 8px;
+          margin-bottom: 16px;
+          background-color: white; }
+        #info-image .formulario #contactForm button {
+          height: 45px;
+          background-color: #0a3369;
+          color: #fff;
+          padding: 10px 20px;
+          border: none;
+          border-radius: 65px;
+          cursor: pointer; } }
 
 @media (max-width: 1024px) {
   #main #bg-dark {
@@ -1102,7 +1129,7 @@ main .bg-image .marquee {
             width: 0.5vh;
             height: 0.5vh; }
   #main .bg-image {
-    height: 120vh; }
+    height: 100%; }
     #main .bg-image .fondo {
       width: 100%;
       height: 120vh; }
@@ -1194,11 +1221,11 @@ main .bg-image .marquee {
             font-style: italic;
             width: 0.5vh;
             height: 0.5vh; }
-  #main .bg-image {
-    height: 120vh; }
-    #main .bg-image .fondo {
+  #main #bg-image {
+    height: 150vh; }
+    #main #bg-image .fondo {
       width: 100%; }
-    #main .bg-image .marquee {
+    #main #bg-image .marquee {
       font-size: clamp(4ve 4rem 8vw);
       overflow: hidden;
       animation: "slideleft 30s non-linear repeat"; }
@@ -1207,28 +1234,28 @@ main .bg-image .marquee {
       transform: translateX(0); }
     100% {
       transform: translateX(-100%); } }
-      #main .bg-image .marquee .marquee--long span {
+      #main #bg-image .marquee .marquee--long span {
         display: inline-block;
         width: var(--tw);
         text-shadow: var(--tw) 0 currentColor, calc(var(--tw) * 2) 0 currentColor, calc(var(--tw) * 3) 0 currentColor, calc(var(--tw) * 4) 0 currentColor;
         will-change: repeat;
         animation: marquee var(--ad) linear infinite; }
-        #main .bg-image .marquee .marquee--long span .reel a {
+        #main #bg-image .marquee .marquee--long span .reel a {
           width: 100%; }
-          #main .bg-image .marquee .marquee--long span .reel a img {
+          #main #bg-image .marquee .marquee--long span .reel a img {
             width: 80px;
             height: 80px; }
-    #main .bg-image .Articulos {
+    #main #bg-image .Articulos {
       padding: 1rem;
       font-size: 1.5rem; }
-      #main .bg-image .Articulos p {
+      #main #bg-image .Articulos p {
         display: none;
         color: beige; }
-      #main .bg-image .Articulos .snippet {
+      #main #bg-image .Articulos .snippet {
         display: block;
         color: beige;
         font-weight: 500; }
-      #main .bg-image .Articulos .read-more {
+      #main #bg-image .Articulos .read-more {
         display: inline-block;
         margin-top: 0.5rem;
         font-size: 0.8rem;
