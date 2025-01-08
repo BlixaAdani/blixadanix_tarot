@@ -1,9 +1,10 @@
-#main{
-.bg-image {
-    height: 100%;
-    background-image: url('/assets/Fondo.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
+#main {
+    .bg-image {
+        height: 100%;
+        background-image: url('/assets/Fondo.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+
         .fondo {
             width: 100%;
             background-image: url('https://s11.gifyu.com/images/SGTb7.gif');
@@ -138,50 +139,50 @@
             font-family: 'Lucida Sans', Times, serif;
         }
 
-            .infoinfo {
-                color: blanchedalmond;
-                font-size: medium;
-                text-align: center;
-                font-family: 'Times New Roman', Times, serif;
-                font-weight: 100;
+        .infoinfo {
+            color: blanchedalmond;
+            font-size: medium;
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: 100;
+        }
+
+        #contactForm {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 16px;
+
+            label {
+                margin-bottom: 8px;
             }
 
-                    #contactForm {
-                        display: flex;
-                        flex-direction: column;
-                        align-items: center;
-                        gap: 16px;
-
-                        label {
-                            margin-bottom: 8px;
-                        }
-
-                        input,
-                        textarea {
-                            padding: 8px;
-                            margin-bottom: 16px;
-                            background-color: white;
-                        }
-
-                        button {
-                            height: 45px;
-                            background-color: #0a3369;
-                            color: #fff;
-                            padding: 10px 20px;
-                            border: none;
-                            border-radius: 65px;
-                            cursor: pointer;
-                        }
-                    }
-
-                    a {
-                        text-decoration: none;
-                        color: inherit;
-                    }
-                }
+            input,
+            textarea {
+                padding: 8px;
+                margin-bottom: 16px;
+                background-color: white;
             }
 
-            
+            button {
+                height: 45px;
+                background-color: #0a3369;
+                color: #fff;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 65px;
+                cursor: pointer;
+            }
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+    }
+}
+
+
 /* STORE.HTML */
 
 .body_store {
@@ -225,26 +226,69 @@
     }
 }
 
-.tree-container > a:nth-child(1),
-.tree-container > a:nth-child(2){
+.tree-container>a:nth-child(1),
+.tree-container>a:nth-child(2) {
     grid-row: 1;
     grid-column: 2;
 }
 
-.tree-container > a:nth-child(3){
+.tree-container>a:nth-child(3) {
     grid-row: 1;
     grid-column: 3;
-} 
+}
 
-.tree-container > a:nth-child(4),
-.tree-container > a:nth-child(5),
-.tree-container > a:nth-child(6)
-{
+.tree-container>a:nth-child(4),
+.tree-container>a:nth-child(5),
+.tree-container>a:nth-child(6) {
     grid-row: 3;
     grid-column: span 1;
 }
 
-.tree-container > a:nth-child(7) {
+.tree-container>a:nth-child(7) {
     grid-row: 4;
     grid-column: span 4;
+}
+
+/*BIJOUTERIE.HTML*/
+
+.main_product {
+    background-image: url('https://i.redd.it/glla87b1nc4a1.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 120vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    .product {
+        text-align: center;
+        margin: 20px;
+        height: 60vh;
+        background-color: rgba(0, 0, 0, 0.884);
+        padding: 15px;
+        border-radius: 50px 50px 50px 50px #0a0a0aaf;
+
+        img {
+            height: 250px;
+            max-width: 100%;
+        }
+
+        .price {
+            color: #fff;
+        }
+
+        h2 {
+            color: #fff;
+        }
+
+        .add-to-cart {
+            background-color: #0a3369;
+            color: #fff;
+            border-radius: 20px 20px 20px 20px;
+            margin-top: 10%;
+            width: 20vh;
+        }
+    }
 }

@@ -255,6 +255,38 @@
   grid-row: 4;
   grid-column: span 4; }
 
+/*BIJOUTERIE.HTML*/
+.main_product {
+  background-image: url("https://i.redd.it/glla87b1nc4a1.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 120vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center; }
+  .main_product .product {
+    text-align: center;
+    margin: 20px;
+    height: 60vh;
+    background-color: rgba(0, 0, 0, 0.884);
+    padding: 15px;
+    border-radius: 50px 50px 50px 50px #0a0a0aaf; }
+    .main_product .product img {
+      height: 250px;
+      max-width: 100%; }
+    .main_product .product .price {
+      color: #fff; }
+    .main_product .product h2 {
+      color: #fff; }
+    .main_product .product .add-to-cart {
+      background-color: #0a3369;
+      color: #fff;
+      border-radius: 20px 20px 20px 20px;
+      margin-top: 10%;
+      width: 20vh; }
+
 .footer {
   width: 100%;
   background-color: #1f001f;
