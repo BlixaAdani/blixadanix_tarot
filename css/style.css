@@ -186,7 +186,6 @@
         margin-bottom: 8px; }
       #info-image .formulario #contactForm input,
       #info-image .formulario #contactForm textarea {
-        width: 100vh;
         padding: 8px;
         margin-bottom: 16px;
         background-color: white; }
@@ -352,56 +351,48 @@
       font-style: italic;
       color: beige;
       text-decoration: none;
-      cursor: pointer; } }
-
-.footer .footer-nav {
-  display: flex; }
-  .footer .footer-nav .footerp {
-    color: bisque; }
-
-/* INFO.HTML */
-#bg-image {
-  background-image: url("https://i.ibb.co/DVB5tNW/Fondo.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: 120vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-  #bg-image .info .infotitulo {
-    color: bisque;
-    font-size: medium;
-    font-style: italic;
-    font-family: 'Lucida Sans', Times, serif;
-    justify-content: center; }
-  #bg-image .info .infoinfo {
-    color: blanchedalmond;
-    font-size: x-small;
-    text-align: center;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: 100; }
-  #bg-image .formulario {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    border-radius: 90px;
-    margin-top: 20px; }
-    #bg-image .formulario #contactForm {
+      cursor: pointer; }
+  .footer .footer-nav {
+    display: flex; }
+    .footer .footer-nav .footerp {
+      color: bisque; }
+  /* INFO.HTML */
+  #info-image {
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 120vh; }
+    #info-image .formulario {
+      height: 100%;
+      gap: 20px;
+      border-radius: 90px;
+      margin-top: 20px; }
+      #info-image .formulario .infotitulo {
+        color: bisque;
+        font-size: medium;
+        font-style: italic;
+        font-family: 'Lucida Sans', Times, serif;
+        justify-content: center; }
+      #info-image .formulario .infoinfo {
+        color: blanchedalmond;
+        font-size: x-small;
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 100; }
+    #info-image #contactForm {
       display: flex;
       flex-direction: column;
       align-items: center;
       gap: 16px; }
-      #bg-image .formulario #contactForm label {
+      #info-image #contactForm label {
         margin-bottom: 8px; }
-      #bg-image .formulario #contactForm input,
-      #bg-image .formulario #contactForm textarea {
+      #info-image #contactForm input,
+      #info-image #contactForm textarea {
         width: 50vh;
         padding: 8px;
         margin-bottom: 16px;
         background-color: white; }
-      #bg-image .formulario #contactForm button {
+      #info-image #contactForm button {
         height: 45px;
         background-color: #0a3369;
         color: #fff;
@@ -409,19 +400,15 @@
         border: none;
         border-radius: 65px;
         cursor: pointer; }
-    #bg-image .formulario a {
+    #info-image a {
       text-decoration: none;
-      color: inherit; }
-    #bg-image .formulario .infovolver {
-      height: 45px;
-      background-color: #0a3369;
-      color: #fff;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 65px;
-      cursor: pointer; }
+      color: inherit; } }
 
-@media (max-width: 375px) {
+@media (min-width: 375px) {
+  #info-image {
+    height: 100%; }
+    #info-image .formulario {
+      height: 130vh; }
   #main #bg-dark {
     background-color: #1f001f;
     width: 20rem;
@@ -707,6 +694,53 @@
       color: bisque; } }
 
 @media (min-width: 426px) {
+  #info-image {
+    width: 100%;
+    height: 120vh; }
+    #info-image .formulario {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      border-radius: 50px;
+      margin-top: 20px;
+      height: 100%; }
+      #info-image .formulario .infotitulo {
+        color: bisque;
+        font-size: small;
+        font-style: italic;
+        font-family: 'Lucida Sans', Times, serif;
+        justify-content: center; }
+      #info-image .formulario .infoinfo {
+        color: blanchedalmond;
+        font-size: small;
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 100; }
+    #info-image #contactForm {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px; }
+      #info-image #contactForm label {
+        margin-bottom: 8px; }
+      #info-image #contactForm input,
+      #info-image #contactForm textarea {
+        width: 30vh;
+        padding: 8px;
+        margin-bottom: 16px;
+        background-color: white; }
+      #info-image #contactForm button {
+        height: 45px;
+        background-color: #0a3369;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 65px;
+        cursor: pointer; }
+    #info-image a {
+      text-decoration: none;
+      color: inherit; }
   #main #bg-dark {
     background-color: #1f001f;
     width: 20rem;
@@ -795,56 +829,52 @@
         font-style: italic;
         color: beige;
         text-decoration: none;
-        cursor: pointer; } }
+        cursor: pointer; }
+  .footer {
+    margin-top: -3vh; }
+    .footer .footer-nav {
+      display: flex; }
+      .footer .footer-nav .footerp {
+        color: bisque; } }
 
-.footer {
-  margin-top: -3vh; }
-  .footer .footer-nav {
-    display: flex; }
-    .footer .footer-nav .footerp {
-      color: bisque; }
-
-#info-image {
-  background-image: url("/assets/storetree.gif");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-  #info-image .formulario {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    border-radius: 90px;
-    margin-top: 20px;
-    height: 125vh; }
-    #info-image .formulario .text-center {
-      color: aliceblue;
-      font-style: italic;
-      font-family: 'Lucida Sans', Times, serif; }
-    #info-image .formulario .infoinfo {
-      color: blanchedalmond;
-      font-size: medium;
-      text-align: center;
-      font-family: 'Times New Roman', Times, serif;
-      font-weight: 100; }
-    #info-image .formulario #contactForm {
+@media (min-width: 768px) {
+  #info-image {
+    width: 100%;
+    height: 120vh; }
+    #info-image .formulario {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      border-radius: 50px;
+      margin-top: 20px;
+      height: 100%; }
+      #info-image .formulario .infotitulo {
+        color: bisque;
+        font-size: large;
+        font-style: italic;
+        font-family: 'Lucida Sans', Times, serif;
+        justify-content: center; }
+      #info-image .formulario .infoinfo {
+        color: blanchedalmond;
+        font-size: large;
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 300; }
+    #info-image #contactForm {
       display: flex;
       flex-direction: column;
       align-items: center;
       gap: 16px; }
-      #info-image .formulario #contactForm label {
+      #info-image #contactForm label {
         margin-bottom: 8px; }
-      #info-image .formulario #contactForm input,
-      #info-image .formulario #contactForm textarea {
-        width: 80%;
+      #info-image #contactForm input,
+      #info-image #contactForm textarea {
+        width: 50vh;
         padding: 8px;
         margin-bottom: 16px;
         background-color: white; }
-      #info-image .formulario #contactForm button {
+      #info-image #contactForm button {
         height: 45px;
         background-color: #0a3369;
         color: #fff;
@@ -852,11 +882,9 @@
         border: none;
         border-radius: 65px;
         cursor: pointer; }
-    #info-image .formulario a {
+    #info-image a {
       text-decoration: none;
       color: inherit; }
-
-@media (max-width: 768px) {
   #main #bg-dark {
     background-color: #1f001f;
     width: 20rem;
@@ -945,53 +973,7 @@
   .footer .footer-nav {
     display: flex; }
     .footer .footer-nav .footerp {
-      color: bisque; }
-  #info-image {
-    background-image: url("/assets/storetree.gif");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
-    #info-image .formulario {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 20px;
-      border-radius: 90px;
-      margin-top: 20px; }
-      #info-image .formulario .text-center {
-        color: aliceblue;
-        font-style: italic;
-        font-family: 'Lucida Sans', Times, serif; }
-      #info-image .formulario .infoinfo {
-        color: blanchedalmond;
-        font-size: medium;
-        text-align: center;
-        font-family: 'Times New Roman', Times, serif;
-        font-weight: 100; }
-      #info-image .formulario #contactForm {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 16px; }
-        #info-image .formulario #contactForm label {
-          margin-bottom: 8px; }
-        #info-image .formulario #contactForm input,
-        #info-image .formulario #contactForm textarea {
-          width: 80vh;
-          padding: 8px;
-          margin-bottom: 16px;
-          background-color: white; }
-        #info-image .formulario #contactForm button {
-          height: 45px;
-          background-color: #0a3369;
-          color: #fff;
-          padding: 10px 20px;
-          border: none;
-          border-radius: 65px;
-          cursor: pointer; } }
+      color: bisque; } }
 
 @media (max-width: 1024px) {
   #main #bg-dark {
